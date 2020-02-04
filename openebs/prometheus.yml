@@ -1,0 +1,1285 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /home/admin
+
+  # Export additional ENV variables
+  env:
+    recording: true
+
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 92
+
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 31
+
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+
+  # Quality
+  # 1 - 100
+  quality: 100
+
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+
+  # The size of the font
+  fontSize: 12
+
+  # The height of lines
+  lineHeight: 1
+
+  # The spacing between letters
+  letterSpacing: 0
+
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+
+# Records, feel free to edit them
+records:
+  - delay: 1200
+    content: "\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 120
+    content: "#"
+  - delay: 152
+    content: ' '
+  - delay: 131
+    content: 'W'
+  - delay: 94
+    content: 'e'
+  - delay: 63
+    content: ' '
+  - delay: 81
+    content: 'w'
+  - delay: 120
+    content: 'i'
+  - delay: 152
+    content: 'l'
+  - delay: 131
+    content: 'l'
+  - delay: 94
+    content: ' '
+  - delay: 63
+    content: 'i'
+  - delay: 120
+    content: 'n'
+  - delay: 152
+    content: 's'
+  - delay: 131
+    content: 't'
+  - delay: 94
+    content: 'a'
+  - delay: 63
+    content: 'l'
+  - delay: 120
+    content: 'l'
+  - delay: 152
+    content: ' '
+  - delay: 131
+    content: "O"
+  - delay: 94
+    content: "p"
+  - delay: 63
+    content: "e"
+  - delay: 120
+    content: 'n'
+  - delay: 152
+    content: "E"
+  - delay: 131
+    content: "B"
+  - delay: 94
+    content: "S"
+  - delay: 63
+    content: ' '
+  - delay: 120
+    content: 'f'
+  - delay: 152
+    content: 'i'
+  - delay: 131
+    content: 'r'
+  - delay: 94
+    content: 's'
+  - delay: 100
+    content: "t\r\n"
+  - delay: 100
+    content: "\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 63
+    content: "k"
+  - delay: 120
+    content: 'u'
+  - delay: 152
+    content: "b"
+  - delay: 131
+    content: "e"
+  - delay: 94
+    content: "c"
+  - delay: 63
+    content: 't'
+  - delay: 120
+    content: 'l'
+  - delay: 152
+    content: ' '
+  - delay: 131
+    content: 'a'
+  - delay: 94
+    content: 'p'
+  - delay: 63
+    content: "p"
+  - delay: 120
+    content: 'l'
+  - delay: 152
+    content: 'y'
+  - delay: 131
+    content: ' '
+  - delay: 94
+    content: "-"
+  - delay: 63
+    content: 'f'
+  - delay: 120
+    content: ' '
+  - delay: 200
+    content: 'https://openebs.github.io/charts/openebs-operator.yaml'
+  - delay: 100
+    content: "\r\n"
+  - delay: 100
+    content: "namespace/openebs created\r\n"
+  - delay: 5
+    content: "serviceaccount/openebs-maya-operator created\r\n"
+  - delay: 20
+    content: "clusterrole.rbac.authorization.k8s.io/openebs-maya-operator created\r\n"
+  - delay: 5
+    content: "clusterrolebinding.rbac.authorization.k8s.io/openebs-maya-operator created\r\n"
+  - delay: 20
+    content: "deployment.apps/maya-apiserver created\r\n"
+  - delay: 20
+    content: "service/maya-apiserver-service created\r\n"
+  - delay: 25
+    content: "deployment.apps/openebs-provisioner created\r\n"
+  - delay: 20
+    content: "deployment.apps/openebs-snapshot-operator created\r\n"
+  - delay: 20
+    content: "configmap/openebs-ndm-config created\r\n"
+  - delay: 20
+    content: "daemonset.apps/openebs-ndm created\r\n"
+  - delay: 20
+    content: "deployment.apps/openebs-ndm-operator created\r\n"
+  - delay: 20
+    content: "deployment.apps/openebs-admission-server created\r\n"
+  - delay: 23
+    content: "deployment.apps/openebs-localpv-provisioner created\r\n\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 2000
+    content: c
+  - delay: 150
+    content: l
+  - delay: 150
+    content: e
+  - delay: 150
+    content: a
+  - delay: 150
+    content: r
+  - delay: 200
+    content: "\r\n\e[3J\e[H\e[2J\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 56
+    content: "# "
+  - delay: 60
+    content: 'C'
+  - delay: 94
+    content: 'o'
+  - delay: 63
+    content: 'n'
+  - delay: 81
+    content: 'f'
+  - delay: 120
+    content: 'i'
+  - delay: 152
+    content: 'r'
+  - delay: 131
+    content: 'm'
+  - delay: 94
+    content: ' '
+  - delay: 63
+    content: "O"
+  - delay: 120
+    content: 'p'
+  - delay: 152
+    content: 'e'
+  - delay: 131
+    content: 'n'
+  - delay: 94
+    content: "E"
+  - delay: 63
+    content: "B"
+  - delay: 94
+    content: "S"
+  - delay: 63
+    content: ' '
+  - delay: 81
+    content: 'p'
+  - delay: 120
+    content: 'o'
+  - delay: 152
+    content: 'd'
+  - delay: 131
+    content: 's'
+  - delay: 94
+    content: ' '
+  - delay: 63
+    content: 'a'
+  - delay: 120
+    content: 'r'
+  - delay: 152
+    content: 'e'
+  - delay: 131
+    content: ' '
+  - delay: 94
+    content: 'd'
+  - delay: 63
+    content: 'e'
+  - delay: 94
+    content: 'p'
+  - delay: 63
+    content: 'l'
+  - delay: 81
+    content: 'o'
+  - delay: 120
+    content: 'y'
+  - delay: 152
+    content: 'e'
+  - delay: 131
+    content: "d\r\n"
+  - delay: 100
+    content: "\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 425
+    content: "kubectl get pods -n openebs"
+  - delay: 1185
+    content: "\r\n"
+  - delay: 103
+    content: "NAME                                           READY   STATUS    RESTARTS   AGE\r\nmaya-apiserver-77b49c99f5-g2cxs                0/1     Running   2          40s\r\nopenebs-admission-server-77d489c57d-8w48m      1/1     Running   0          39s\r\nopenebs-localpv-provisioner-8447b496c7-69tcz   1/1     Running   0          39s\r\nopenebs-ndm-4l4lw                              1/1     Running   0          39s\r\nopenebs-ndm-56gc4                              1/1     Running   0          39s\r\nopenebs-ndm-operator-f64c5bb7-l4kh2            1/1     Running   1          39s\r\nopenebs-ndm-qmfrj                              1/1     Running   0          39s\r\nopenebs-ndm-xbkkj                              1/1     Running   0          39s\r\nopenebs-provisioner-557d489db8-6cdvk           1/1     Running   0          40s\r\nopenebs-snapshot-operator-6d48b74fdb-n6v2l     2/2     Running   0          40s\r\n\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 2000
+    content: c
+  - delay: 150
+    content: l
+  - delay: 150
+    content: e
+  - delay: 150
+    content: a
+  - delay: 150
+    content: r
+  - delay: 200
+    content: "\r\n\e[3J\e[H\e[2J\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 120
+    content: "#"
+  - delay: 152
+    content: ' '
+  - delay: 131
+    content: 'G'
+  - delay: 94
+    content: 'e'
+  - delay: 63
+    content: 't'
+  - delay: 81
+    content: ' '
+  - delay: 120
+    content: 'l'
+  - delay: 152
+    content: 'i'
+  - delay: 131
+    content: 's'
+  - delay: 94
+    content: 't'
+  - delay: 63
+    content: ' '
+  - delay: 120
+    content: 'o'
+  - delay: 152
+    content: 'f'
+  - delay: 131
+    content: ' '
+  - delay: 94
+    content: 'Bl'
+  - delay: 63
+    content: 'o'
+  - delay: 120
+    content: 'c'
+  - delay: 120
+    content: 'k'
+  - delay: 152
+    content: 'd'
+  - delay: 131
+    content: "e"
+  - delay: 94
+    content: "v"
+  - delay: 63
+    content: "i"
+  - delay: 120
+    content: 'c'
+  - delay: 152
+    content: 'e'
+  - delay: 131
+    content: "s\r\n"
+  - delay: 100
+    content: "\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 1542
+    content: kubectl get blockdevices
+  - delay: 829
+    content: ' '
+  - delay: 182
+    content: '-'
+  - delay: 310
+    content: 'n'
+  - delay: 1128
+    content: ' '
+  - delay: 120
+    content: o
+  - delay: 152
+    content: p
+  - delay: 131
+    content: e
+  - delay: 94
+    content: 'n'
+  - delay: 63
+    content: e
+  - delay: 81
+    content: b
+  - delay: 98
+    content: s
+  - delay: 500
+    content: "\r\n"
+  - delay: 68
+    content: "NAME                                           NODENAME                        SIZE           CLAIMSTATE   STATUS   AGE\r\nblockdevice-053f6bfd274abda24a6ab91124434128   ip-172-20-35-96.ec2.internal    107374182400   Unclaimed    Active   52s\r\nblockdevice-25d792782cabf3500ff16c097442b9d5   ip-172-20-34-108.ec2.internal   107374182400   Unclaimed    Active   52s\r\nblockdevice-2edad225d0451fa420e5f64a741ae02c   ip-172-20-39-58.ec2.internal    107374182400   Unclaimed    Active   52s\r\nblockdevice-39b1f151ad8ee6ab8378d76f7bc21ade   ip-172-20-42-34.ec2.internal    107374182400   Unclaimed    Active   52s\r\nblockdevice-556fe3d1ed8c22bca1f29d5991498b97   ip-172-20-42-34.ec2.internal    107374182400   Unclaimed    Active   52s\r\nblockdevice-8c49ca3cac47d13ee642fb9b47b28246   ip-172-20-39-58.ec2.internal    107374182400   Unclaimed    Active   52s\r\nblockdevice-aea593107d5b6891076182c86f56278e   ip-172-20-34-108.ec2.internal   107374182400   Unclaimed    Active   52s\r\nblockdevice-d131f49dad3537d16cf9de4a2acf2953   ip-172-20-35-96.ec2.internal    107374182400   Unclaimed    Active   52s\r\n\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 2000
+    content: c
+  - delay: 118
+    content: l
+  - delay: 98
+    content: e
+  - delay: 129
+    content: a
+  - delay: 56
+    content: r
+  - delay: 200
+    content: "\r\n\e[3J\e[H\e[2J\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 120
+    content: "#"
+  - delay: 152
+    content: ' '
+  - delay: 131
+    content: 'Ex'
+  - delay: 94
+    content: 't'
+  - delay: 63
+    content: 'ract '
+  - delay: 81
+    content: 'and'
+  - delay: 120
+    content: ' '
+  - delay: 152
+    content: 'co'
+  - delay: 131
+    content: 'py'
+  - delay: 94
+    content: ' '
+  - delay: 94
+    content: 'Bl'
+  - delay: 63
+    content: 'o'
+  - delay: 120
+    content: 'c'
+  - delay: 120
+    content: 'k'
+  - delay: 152
+    content: 'd'
+  - delay: 131
+    content: "e"
+  - delay: 94
+    content: "v"
+  - delay: 63
+    content: "i"
+  - delay: 120
+    content: 'c'
+  - delay: 152
+    content: 'e'
+  - delay: 100
+    content: ' '
+  - delay: 120
+    content: 'n'
+  - delay: 152
+    content: 'a'
+  - delay: 131
+    content: 'm'
+  - delay: 94
+    content: 'e'
+  - delay: 94
+    content: 's'
+  - delay: 100
+    content: "\r\n"
+  - delay: 100
+    content: "\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 7371
+    content: kubectl get blockdevices -n openebs
+  - delay: 4000
+    content: '|'
+  - delay: 1000
+    content: a
+  - delay: 60
+    content: w
+  - delay: 60
+    content: k
+  - delay: 57
+    content: ' '
+  - delay: 60
+    content: ''''
+  - delay: 100
+    content: '{'
+  - delay: 100
+    content: p
+  - delay: 100
+    content: r
+  - delay: 60
+    content: i
+  - delay: 100
+    content: 'n'
+  - delay: 100
+    content: t
+  - delay: 100
+    content: ' '
+  - delay: 100
+    content: $
+  - delay: 260
+    content: '1'
+  - delay: 1408
+    content: '}'
+  - delay: 1984
+    content: ''''
+  - delay: 935
+    content: "\r\n"
+  - delay: 94
+    content: "NAME\r\nblockdevice-053f6bfd274abda24a6ab91124434128\r\nblockdevice-25d792782cabf3500ff16c097442b9d5\r\nblockdevice-2edad225d0451fa420e5f64a741ae02c\r\nblockdevice-39b1f151ad8ee6ab8378d76f7bc21ade\r\nblockdevice-556fe3d1ed8c22bca1f29d5991498b97\r\nblockdevice-8c49ca3cac47d13ee642fb9b47b28246\r\nblockdevice-aea593107d5b6891076182c86f56278e\r\nblockdevice-d131f49dad3537d16cf9de4a2acf2953\r\n\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 2000
+    content: c
+  - delay: 118
+    content: l
+  - delay: 98
+    content: e
+  - delay: 129
+    content: a
+  - delay: 56
+    content: r
+  - delay: 200
+    content: "\r\n\e[3J\e[H\e[2J\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 120
+    content: "#"
+  - delay: 152
+    content: ' '
+  - delay: 131
+    content: 'C'
+  - delay: 94
+    content: 'r'
+  - delay: 63
+    content: 'e'
+  - delay: 81
+    content: 'at'
+  - delay: 120
+    content: 'e a'
+  - delay: 152
+    content: ' '
+  - delay: 131
+    content: "St"
+  - delay: 94
+    content: 'or'
+  - delay: 94
+    content: 'a'
+  - delay: 63
+    content: 'g'
+  - delay: 120
+    content: 'e'
+  - delay: 120
+    content: "Po"
+  - delay: 152
+    content: 'ol'
+  - delay: 131
+    content: "C"
+  - delay: 94
+    content: "l"
+  - delay: 63
+    content: "a"
+  - delay: 120
+    content: 'i'
+  - delay: 152
+    content: 'm'
+  - delay: 100
+    content: "\r\n"
+  - delay: 100
+    content: "\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 1000
+    content: "cat <<EOF | kubectl apply -f -\r\n> apiVersion: openebs.io/v1alpha1\r\n> kind: StoragePoolClaim\r\n> metadata:\r\n>   name: cstor-disk-pool\r\n>   annotations:\r\n>     cas.openebs.io/config: |\r\n>       - name: PoolResourceRequests\r\n>         value: |-\r\n>             memory: 2Gi\r\n>       - name: PoolResourceLimits\r\n>         value: |-\r\n>             memory: 4Gi\r\n> spec:\r\n>   name: cstor-disk-pool\r\n>   type: disk\r\n>   poolSpec:\r\n>     poolType: striped\r\n>   blockDevices:\r\n>     blockDeviceList:\r\n>     - blockdevice-053f6bfd274abda24a6ab91124434128\r\n>     - blockdevice-25d792782cabf3500ff16c097442b9d5\r\n>     - blockdevice-2edad225d0451fa420e5f64a741ae02c\r\n>     - blockdevice-39b1f151ad8ee6ab8378d76f7bc21ade\r\n>     - blockdevice-556fe3d1ed8c22bca1f29d5991498b97\r\n>     - blockdevice-8c49ca3cac47d13ee642fb9b47b28246\r\n>     - blockdevice-aea593107d5b6891076182c86f56278e\r\n>     - blockdevice-d131f49dad3537d16cf9de4a2acf2953\r\n> EOF"
+  - delay: 1158
+    content: "\r\n"
+  - delay: 239
+    content: "storagepoolclaim.openebs.io/cstor-disk-pool created\r\n\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 2000
+    content: c
+  - delay: 118
+    content: l
+  - delay: 98
+    content: e
+  - delay: 129
+    content: a
+  - delay: 56
+    content: r
+  - delay: 200
+    content: "\r\n\e[3J\e[H\e[2J\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 120
+    content: "#"
+  - delay: 152
+    content: ' '
+  - delay: 131
+    content: 'L'
+  - delay: 94
+    content: 'i'
+  - delay: 63
+    content: 'st'
+  - delay: 81
+    content: ' '
+  - delay: 120
+    content: 'St'
+  - delay: 152
+    content: 'o'
+  - delay: 131
+    content: 'r'
+  - delay: 94
+    content: 'ag'
+  - delay: 94
+    content: 'e'
+  - delay: 63
+    content: 'Po'
+  - delay: 120
+    content: 'ol'
+  - delay: 120
+    content: 'C'
+  - delay: 152
+    content: 'l'
+  - delay: 131
+    content: "a"
+  - delay: 94
+    content: "i"
+  - delay: 63
+    content: "m"
+  - delay: 120
+    content: 's'
+  - delay: 100
+    content: "\r\n"
+  - delay: 100
+    content: "\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 2714
+    content: k
+  - delay: 191
+    content: u
+  - delay: 199
+    content: b
+  - delay: 57
+    content: e
+  - delay: 63
+    content: c
+  - delay: 190
+    content: t
+  - delay: 82
+    content: l
+  - delay: 57
+    content: ' '
+  - delay: 130
+    content: g
+  - delay: 107
+    content: e
+  - delay: 64
+    content: t
+  - delay: 56
+    content: ' '
+  - delay: 962
+    content: s
+  - delay: 97
+    content: p
+  - delay: 697
+    content: c
+  - delay: 765
+    content: "\r\n"
+  - delay: 73
+    content: "NAME              AGE\r\ncstor-disk-pool   7s\r\n\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 2000
+    content: c
+  - delay: 118
+    content: l
+  - delay: 98
+    content: e
+  - delay: 129
+    content: a
+  - delay: 56
+    content: r
+  - delay: 200
+    content: "\r\n\e[3J\e[H\e[2J\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 120
+    content: "#"
+  - delay: 152
+    content: ' '
+  - delay: 131
+    content: 'V'
+  - delay: 94
+    content: 'er'
+  - delay: 63
+    content: 'i'
+  - delay: 81
+    content: 'fy'
+  - delay: 120
+    content: ' '
+  - delay: 63
+    content: 'i'
+  - delay: 81
+    content: 'f'
+  - delay: 120
+    content: ' '
+  - delay: 152
+    content: 'cS'
+  - delay: 131
+    content: 't'
+  - delay: 94
+    content: 'o'
+  - delay: 94
+    content: 'r'
+  - delay: 63
+    content: ' '
+  - delay: 120
+    content: 'Po'
+  - delay: 120
+    content: 'ol'
+  - delay: 152
+    content: ' '
+  - delay: 131
+    content: "i"
+  - delay: 94
+    content: "s"
+  - delay: 63
+    content: ' '
+  - delay: 120
+    content: 'c'
+  - delay: 120
+    content: 'r'
+  - delay: 120
+    content: 'e'
+  - delay: 152
+    content: 'a'
+  - delay: 131
+    content: "t"
+  - delay: 94
+    content: "e"
+  - delay: 63
+    content: 'd'
+  - delay: 100
+    content: "\r\n"
+  - delay: 100
+    content: "\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 4310
+    content: kubectl get spc
+  - delay: 1127
+    content: "\b\e[K"
+  - delay: 255
+    content: "\b\e[K"
+  - delay: 225
+    content: "\b\e[K"
+  - delay: 1000
+    content: c
+  - delay: 56
+    content: s
+  - delay: 79
+    content: p
+  - delay: 573
+    content: ' '
+  - delay: 268
+    content: '-'
+  - delay: 599
+    content: 'n'
+  - delay: 294
+    content: o
+  - delay: 163
+    content: p
+  - delay: 210
+    content: e
+  - delay: 24
+    content: 'n'
+  - delay: 1151
+    content: e
+  - delay: 97
+    content: b
+  - delay: 80
+    content: s
+  - delay: 423
+    content: "\r\n"
+  - delay: 79
+    content: "NAME                   ALLOCATED   FREE     CAPACITY    STATUS    TYPE       AGE\r\ncstor-disk-pool-2q5h   78.5K       199.5G   199.5G      Healthy   striped    26s\r\ncstor-disk-pool-ak8a   78.5K       199.5G   199.5G      Healthy   striped    26s\r\ncstor-disk-pool-lqi0   78.5K       199.5G   199.5G      Healthy   striped    25s\r\ncstor-disk-pool-u0mq   78.5K       199.5G   199.5G      Healthy   striped    26s\r\n\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 2000
+    content: c
+  - delay: 118
+    content: l
+  - delay: 98
+    content: e
+  - delay: 129
+    content: a
+  - delay: 56
+    content: r
+  - delay: 200
+    content: "\r\n\e[3J\e[H\e[2J\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 120
+    content: "#"
+  - delay: 152
+    content: ' '
+  - delay: 131
+    content: 'C'
+  - delay: 94
+    content: 're'
+  - delay: 63
+    content: 'a'
+  - delay: 81
+    content: 'te'
+  - delay: 120
+    content: ' '
+  - delay: 63
+    content: 'a'
+  - delay: 81
+    content: ' '
+  - delay: 120
+    content: 'S'
+  - delay: 152
+    content: 'to'
+  - delay: 131
+    content: 'r'
+  - delay: 94
+    content: 'a'
+  - delay: 94
+    content: 'ge'
+  - delay: 63
+    content: 'C'
+  - delay: 120
+    content: 'l'
+  - delay: 120
+    content: 'a'
+  - delay: 152
+    content: 's'
+  - delay: 131
+    content: "s"
+  - delay: 100
+    content: "\r\n"
+  - delay: 100
+    content: "\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 1423
+    content: "cat <<EOF | kubectl apply -f -\r\n> apiVersion: storage.k8s.io/v1\r\n> kind: StorageClass\r\n> metadata:\r\n>   name: openebs-cstor\r\n>   annotations:\r\n>     openebs.io/cas-type: cstor\r\n>     cas.openebs.io/config: |\r\n>       - name: StoragePoolClaim\r\n>         value: \"cstor-disk-pool\"\r\n>       - name: ReplicaCount\r\n>         value: \"3\"\r\n> provisioner: openebs.io/provisioner-iscsi\r\n> EOF"
+  - delay: 7069
+    content: "\r\n"
+  - delay: 187
+    content: "storageclass.storage.k8s.io/openebs-cstor created\r\n\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 2000
+    content: c
+  - delay: 118
+    content: l
+  - delay: 98
+    content: e
+  - delay: 129
+    content: a
+  - delay: 56
+    content: r
+  - delay: 200
+    content: "\r\n\e[3J\e[H\e[2J\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 120
+    content: "#"
+  - delay: 152
+    content: ' '
+  - delay: 131
+    content: 'V'
+  - delay: 94
+    content: 'er'
+  - delay: 63
+    content: 'i'
+  - delay: 81
+    content: 'fy'
+  - delay: 120
+    content: ' '
+  - delay: 63
+    content: 'i'
+  - delay: 81
+    content: 'f'
+  - delay: 120
+    content: ' '
+  - delay: 152
+    content: 'S'
+  - delay: 131
+    content: 't'
+  - delay: 94
+    content: 'o'
+  - delay: 94
+    content: 'r'
+  - delay: 63
+    content: 'a'
+  - delay: 120
+    content: 'g'
+  - delay: 120
+    content: 'e'
+  - delay: 152
+    content: 'C'
+  - delay: 131
+    content: "la"
+  - delay: 94
+    content: "ss"
+  - delay: 63
+    content: ' '
+  - delay: 131
+    content: "i"
+  - delay: 94
+    content: "s"
+  - delay: 63
+    content: ' '
+  - delay: 120
+    content: 'c'
+  - delay: 120
+    content: 'r'
+  - delay: 120
+    content: 'e'
+  - delay: 152
+    content: 'a'
+  - delay: 131
+    content: "t"
+  - delay: 94
+    content: "e"
+  - delay: 63
+    content: 'd'
+  - delay: 100
+    content: "\r\n"
+  - delay: 100
+    content: "\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 1485
+    content: k
+  - delay: 212
+    content: u
+  - delay: 183
+    content: b
+  - delay: 42
+    content: e
+  - delay: 79
+    content: c
+  - delay: 204
+    content: t
+  - delay: 67
+    content: l
+  - delay: 63
+    content: ' '
+  - delay: 122
+    content: g
+  - delay: 55
+    content: e
+  - delay: 85
+    content: t
+  - delay: 74
+    content: ' '
+  - delay: 2731
+    content: s
+  - delay: 214
+    content: c
+  - delay: 1682
+    content: "\r\n"
+  - delay: 158
+    content: "NAME                        PROVISIONER                                                AGE\r\ndefault                     kubernetes.io/aws-ebs                                      3h54m\r\ngp2 (default)               kubernetes.io/aws-ebs                                      3h54m\r\nopenebs-cstor               openebs.io/provisioner-iscsi                               7s\r\nopenebs-device              openebs.io/local                                           7m37s\r\nopenebs-hostpath            openebs.io/local                                           7m37s\r\nopenebs-jiva-default        openebs.io/provisioner-iscsi                               7m38s\r\nopenebs-snapshot-promoter   volumesnapshot.external-storage.k8s.io/snapshot-promoter   7m37s\r\n\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 2000
+    content: c
+  - delay: 118
+    content: l
+  - delay: 98
+    content: e
+  - delay: 129
+    content: a
+  - delay: 56
+    content: r
+  - delay: 200
+    content: "\r\n\e[3J\e[H\e[2J\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 120
+    content: '#'
+  - delay: 203
+    content: ' '
+  - delay: 120
+    content: 'U'
+  - delay: 130
+    content: 's'
+  - delay: 121
+    content: 'e'
+  - delay: 123
+    content: 'n'
+  - delay: 76
+    content: ' '
+  - delay: 100
+    content: 'Helm'
+  - delay: 130
+    content: ' '
+  - delay: 134
+    content: 'ch'
+  - delay: 156
+    content: 'a'
+  - delay: 160
+    content: 'rt'
+  - delay: 124
+    content: ' '
+  - delay: 126
+    content: 'to'
+  - delay: 83
+    content: ' '
+  - delay: 137
+    content: 'd'
+  - delay: 146
+    content: e
+  - delay: 56
+    content: p
+  - delay: 77
+    content: 'lo'
+  - delay: 202
+    content: y
+  - delay: 94
+    content: ' '
+  - delay: 200
+    content: 'P'
+  - delay: 133
+    content: 'ro'
+  - delay: 67
+    content: 'm'
+  - delay: 79
+    content: 'e'
+  - delay: 112
+    content: t
+  - delay: 133
+    content: h
+  - delay: 111
+    content: e
+  - delay: 96
+    content: u
+  - delay: 152
+    content: s
+  - delay: 123
+    content: "\r\n\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 213
+    content: helm install --name my-release stable/prometheus
+  - delay: 200
+    content: ' '
+  - delay: 239
+    content: '-'
+  - delay: 114
+    content: '-'
+  - delay: 136
+    content: s
+  - delay: 63
+    content: e
+  - delay: 262
+    content: t
+  - delay: 145
+    content: ' '
+  - delay: 23592
+    content: "alertmanager.persiste\rentVolume.storageClass"
+  - delay: 1867
+    content: =
+  - delay: 1038
+    content: o
+  - delay: 201
+    content: p
+  - delay: 142
+    content: e
+  - delay: 83
+    content: 'n'
+  - delay: 136
+    content: e
+  - delay: 175
+    content: b
+  - delay: 756
+    content: s
+  - delay: 266
+    content: '-'
+  - delay: 182
+    content: c
+  - delay: 252
+    content: s
+  - delay: 241
+    content: t
+  - delay: 93
+    content: o
+  - delay: 81
+    content: r
+  - delay: 801
+    content: ','
+  - delay: 1897
+    content: "pushgateway.persistentVolume.storageClass \b"
+  - delay: 1504
+    content: "= \b"
+  - delay: 1697
+    content: "o \b"
+  - delay: 186
+    content: "p \b"
+  - delay: 148
+    content: "e \b"
+  - delay: 97
+    content: "n \b"
+  - delay: 105
+    content: "e \b"
+  - delay: 197
+    content: "bs \b"
+  - delay: 993
+    content: "- \b"
+  - delay: 183
+    content: "c \b"
+  - delay: 196
+    content: "s \b"
+  - delay: 241
+    content: "t \b"
+  - delay: 121
+    content: "o \b"
+  - delay: 76
+    content: "r,"
+  - delay: 16781
+    content: "server.persistentVolume.storageClass"
+  - delay: 1348
+    content: "="
+  - delay: 764
+    content: "o"
+  - delay: 424
+    content: "p"
+  - delay: 219
+    content: "e"
+  - delay: 103
+    content: "n"
+  - delay: 72
+    content: "e"
+  - delay: 130
+    content: "b"
+  - delay: 93
+    content: "s"
+  - delay: 818
+    content: "-"
+  - delay: 158
+    content: "c"
+  - delay: 200
+    content: "s"
+  - delay: 232
+    content: "t"
+  - delay: 119
+    content: "o"
+  - delay: 120
+    content: "r"
+  - delay: 233
+    content: "\r\n"
+  - delay: 2690
+    content: "NAME:   my-release\r\n"
+  - delay: 269
+    content: "LAST DEPLOYED: Tue Feb  4 10:22:04 2020\r\nNAMESPACE: default\r\nSTATUS: DEPLOYED\r\n\r\nRESOURCES:\r\n==> v1/ConfigMap\r\nNAME                                AGE\r\nmy-release-prometheus-alertmanager  0s\r\nmy-release-prometheus-server        0s\r\n\r\n==> v1/DaemonSet\r\nNAME                                 AGE\r\nmy-release-prometheus-node-exporter  0s\r\n\r\n==> v1/Deployment\r\nNAME                                      AGE\r\nmy-release-prometheus-alertmanager        0s\r\nmy-release-prometheus-kube-state-metrics  0s\r\nmy-release-prometheus-pushgateway         0s\r\nmy-release-prometheus-server              0s\r\n\r\n==> v1/PersistentVolumeClaim\r\nNAME                                AGE\r\nmy-release-prometheus-alertmanager  0s\r\nmy-release-prometheus-server        0s\r\n\r\n==> v1/Pod(related)\r\nNAME                                                       AGE\r\nmy-release-prometheus-alertmanager-84fd4744dd-sb95l        0s\r\nmy-release-prometheus-kube-state-metrics-569b67d575-9gd2c  0s\r\nmy-release-prometheus-node-exporter-5vxcq                  0s\r\nmy-release-prometheus-node-exporter-crjt8                  0s\r\nmy-release-prometheus-node-exporter-sfhfc                  0s\r\nmy-release-prometheus-node-exporter-sjtc5                  0s\r\nmy-release-prometheus-pushgateway-7bd647958c-t5shs         0s\r\nmy-release-prometheus-server-7fd64f55d4-8cgh8              0s\r\n\r\n==> v1/Service\r\nNAME                                      AGE\r\nmy-release-prometheus-alertmanager        0s\r\nmy-release-prometheus-kube-state-metrics  0s\r\nmy-release-prometheus-node-exporter       0s\r\nmy-release-prometheus-pushgateway         0s\r\nmy-release-prometheus-server              0s\r\n\r\n==> v1/ServiceAccount\r\nNAME                                      AGE\r\nmy-release-prometheus-alertmanager        0s\r\nmy-release-prometheus-kube-state-metrics  0s\r\nmy-release-prometheus-node-exporter       0s\r\nmy-release-prometheus-pushgateway         0s\r\nmy-release-prometheus-server              0s\r\n\r\n==> v1beta1/ClusterRole\r\nNAME                                      AGE\r\nmy-release-prometheus-alertmanager        0s\r\nmy-release-prometheus-kube-state-metrics  0s\r\nmy-release-prometheus-pushgateway         0s\r\nmy-release-prometheus-server              0s\r\n\r\n==> v1beta1/ClusterRoleBinding\r\nNAME                                      AGE\r\nmy-release-prometheus-alertmanager        0s\r\nmy-release-prometheus-kube-state-metrics  0s\r\nmy-release-prometheus-pushgateway         0s\r\nmy-release-prometheus-server              0s\r\n\r\n\r\nNOTES:\r\nThe Prometheus server can be accessed via port 80 on the following DNS name from within your cluster:\r\nmy-release-prometheus-server.default.svc.cluster.local\r\n\r\n\r\nGet the Prometheus server URL by running these commands in the same shell:\r\n  export POD_NAME=$(kubectl get pods --namespace default -l \"app=prometheus,component=server\" -o jsonpath=\"{.items[0].metadata.name}\")\r\n  kubectl --namespace default port-forward $POD_NAME 9090\r\n\r\n\r\nThe Prometheus alertmanager can be accessed via port 80 on the following DNS name from within your cluster:\r\nmy-release-prometheus-alertmanager.default.svc.cluster.local\r\n\r\n\r\nGet the Alertmanager URL by running these commands in the same shell:\r\n  export POD_NAME=$(kubectl get pods --namespace default -l \"app=prometheus,component=alertmanager\" -o jsonpath=\"{.items[0].metadata.name}\")\r\n  kubectl --namespace default port-forward $POD_NAME 9093\r\n#################################################################################\r\n######   WARNING: Pod Security Policy has been moved to a global property.  #####\r\n######            use .Values.podSecurityPolicy.enabled with pod-based      #####\r\n######            annotations                                               #####\r\n######            (e.g. .Values.nodeExporter.podSecurityPolicy.annotations) #####\r\n#################################################################################\r\n\r\n\r\nThe Prometheus PushGateway can be accessed via port 9091 on the following DNS name from within your cluster:\r\nmy-release-prometheus-pushgateway.default.svc.cluster.local\r\n\r\n\r\nGet the PushGateway URL by running these commands in the same shell:\r\n  export POD_NAME=$(kubectl get pods --namespace default -l \"app=prometheus,component=pushgateway\" -o jsonpath=\"{.items[0].metadata.name}\")\r\n  kubectl --namespace default port-forward $POD_NAME 9091\r\n\r\nFor more information on running Prometheus, visit:\r\nhttps://prometheus.io/\r\n\r\n"
+  - delay: 11
+    content: "\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 262
+    content: k
+  - delay: 147
+    content: u
+  - delay: 181
+    content: b
+  - delay: 59
+    content: e
+  - delay: 66
+    content: c
+  - delay: 132
+    content: t
+  - delay: 76
+    content: l
+  - delay: 56
+    content: ' '
+  - delay: 176
+    content: g
+  - delay: 83
+    content: e
+  - delay: 103
+    content: t
+  - delay: 38
+    content: ' '
+  - delay: 152
+    content: p
+  - delay: 170
+    content: o
+  - delay: 63
+    content: d
+  - delay: 55
+    content: s
+  - delay: 160
+    content: "\r\n"
+  - delay: 86
+    content: "NAME                                                        READY   STATUS    RESTARTS   AGE\r\nmy-release-prometheus-alertmanager-84fd4744dd-sb95l         2/2     Running   0          94s\r\nmy-release-prometheus-kube-state-metrics-569b67d575-9gd2c   1/1     Running   0          94s\r\nmy-release-prometheus-node-exporter-5vxcq                   1/1     Running   0          94s\r\nmy-release-prometheus-node-exporter-crjt8                   1/1     Running   0          94s\r\nmy-release-prometheus-node-exporter-sfhfc                   1/1     Running   0          94s\r\nmy-release-prometheus-node-exporter-sjtc5                   1/1     Running   0          94s\r\nmy-release-prometheus-pushgateway-7bd647958c-t5shs          1/1     Running   0          94s\r\nmy-release-prometheus-server-7fd64f55d4-8cgh8               2/2     Running   0          94s\r\n\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 139
+    content: kubectl get pods
+  - delay: 267
+    content: "\b\e[K"
+  - delay: 164
+    content: "\b\e[K"
+  - delay: 177
+    content: "\b\e[K"
+  - delay: 348
+    content: v
+  - delay: 58
+    content: c
+  - delay: 294
+    content: "\r\n"
+  - delay: 80
+    content: "NAME                                 STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS    AGE\r\nmaya-database-mysql-0                Bound    pvc-0f4e9013-f30d-4d06-abee-502d7a1c68d5   5G         RWO            openebs-cstor   87m\r\nmaya-database-mysql-1                Bound    pvc-f0a63fc6-226b-4991-b737-aef573e4a6a1   5G         RWO            openebs-cstor   86m\r\nmy-release-prometheus-alertmanager   Bound    pvc-cb9415ad-97b1-44d3-9ef9-deb927ae4f6b   2Gi        RWO            openebs-cstor   97s\r\nmy-release-prometheus-server         Bound    pvc-287afaf8-f407-414c-9b73-00e76c857447   8Gi        RWO            openebs-cstor   97s\r\n\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 120
+    content: "#"
+  - delay: 152
+    content: ' '
+  - delay: 131
+    content: 'Per'
+  - delay: 94
+    content: 'cona'
+  - delay: 63
+    content: ' '
+  - delay: 81
+    content: 'is'
+  - delay: 120
+    content: ' '
+  - delay: 63
+    content: 's'
+  - delay: 81
+    content: 'uc'
+  - delay: 120
+    content: 'c'
+  - delay: 152
+    content: 'es'
+  - delay: 131
+    content: 's'
+  - delay: 94
+    content: 'f'
+  - delay: 94
+    content: 'u'
+  - delay: 63
+    content: 'l'
+  - delay: 120
+    content: 'l'
+  - delay: 120
+    content: 'y '
+  - delay: 63
+    content: 'dep'
+  - delay: 81
+    content: 'lo'
+  - delay: 120
+    content: 'ye'
+  - delay: 152
+    content: 'd'
+  - delay: 131
+    content: ' '
+  - delay: 94
+    content: 'on'
+  - delay: 94
+    content: ' '
+  - delay: 63
+    content: 'an'
+  - delay: 120
+    content: ' '
+  - delay: 120
+    content: 'Ope'
+  - delay: 152
+    content: 'nEBS'
+  - delay: 131
+    content: ' '
+  - delay: 94
+    content: "pe"
+  - delay: 63
+    content: 'r'
+  - delay: 131
+    content: "si"
+  - delay: 94
+    content: "ste"
+  - delay: 63
+    content: 'nt'
+  - delay: 131
+    content: ' '
+  - delay: 94
+    content: 'vo'
+  - delay: 94
+    content: 'l'
+  - delay: 63
+    content: 'u'
+  - delay: 120
+    content: 'm'
+  - delay: 120
+    content: 'e'
+  - delay: 100
+    content: "\r\n"
+  - delay: 100
+    content: "\e]0;admin@openebs: ~\aadmin@openebs:~$ "
