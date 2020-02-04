@@ -1,0 +1,2 @@
+# terminalizer
+Terminal recording sessions
