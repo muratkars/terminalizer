@@ -1,0 +1,2019 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /home/admin
+
+  # Export additional ENV variables
+  env:
+    recording: true
+
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 92
+
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 31
+
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+
+  # Quality
+  # 1 - 100
+  quality: 100
+
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+
+  # The size of the font
+  fontSize: 12
+
+  # The height of lines
+  lineHeight: 1
+
+  # The spacing between letters
+  letterSpacing: 0
+
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+
+# Records, feel free to edit them
+records:
+  - delay: 1200
+    content: "\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 120
+    content: "#"
+  - delay: 152
+    content: ' '
+  - delay: 131
+    content: 'W'
+  - delay: 94
+    content: 'e'
+  - delay: 63
+    content: ' '
+  - delay: 81
+    content: 'w'
+  - delay: 120
+    content: 'i'
+  - delay: 152
+    content: 'l'
+  - delay: 131
+    content: 'l'
+  - delay: 94
+    content: ' '
+  - delay: 63
+    content: 'i'
+  - delay: 120
+    content: 'n'
+  - delay: 152
+    content: 's'
+  - delay: 131
+    content: 't'
+  - delay: 94
+    content: 'a'
+  - delay: 63
+    content: 'l'
+  - delay: 120
+    content: 'l'
+  - delay: 152
+    content: ' '
+  - delay: 131
+    content: "O"
+  - delay: 94
+    content: "p"
+  - delay: 63
+    content: "e"
+  - delay: 120
+    content: 'n'
+  - delay: 152
+    content: "E"
+  - delay: 131
+    content: "B"
+  - delay: 94
+    content: "S"
+  - delay: 63
+    content: ' '
+  - delay: 120
+    content: 'f'
+  - delay: 152
+    content: 'i'
+  - delay: 131
+    content: 'r'
+  - delay: 94
+    content: 's'
+  - delay: 100
+    content: "t\r\n"
+  - delay: 100
+    content: "\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 63
+    content: "k"
+  - delay: 120
+    content: 'u'
+  - delay: 152
+    content: "b"
+  - delay: 131
+    content: "e"
+  - delay: 94
+    content: "c"
+  - delay: 63
+    content: 't'
+  - delay: 120
+    content: 'l'
+  - delay: 152
+    content: ' '
+  - delay: 131
+    content: 'a'
+  - delay: 94
+    content: 'p'
+  - delay: 63
+    content: "p"
+  - delay: 120
+    content: 'l'
+  - delay: 152
+    content: 'y'
+  - delay: 131
+    content: ' '
+  - delay: 94
+    content: "-"
+  - delay: 63
+    content: 'f'
+  - delay: 120
+    content: ' '
+  - delay: 200
+    content: 'https://openebs.github.io/charts/openebs-operator.yaml'
+  - delay: 100
+    content: "\r\n"
+  - delay: 100
+    content: "namespace/openebs created\r\n"
+  - delay: 5
+    content: "serviceaccount/openebs-maya-operator created\r\n"
+  - delay: 20
+    content: "clusterrole.rbac.authorization.k8s.io/openebs-maya-operator created\r\n"
+  - delay: 5
+    content: "clusterrolebinding.rbac.authorization.k8s.io/openebs-maya-operator created\r\n"
+  - delay: 20
+    content: "deployment.apps/maya-apiserver created\r\n"
+  - delay: 20
+    content: "service/maya-apiserver-service created\r\n"
+  - delay: 25
+    content: "deployment.apps/openebs-provisioner created\r\n"
+  - delay: 20
+    content: "deployment.apps/openebs-snapshot-operator created\r\n"
+  - delay: 20
+    content: "configmap/openebs-ndm-config created\r\n"
+  - delay: 20
+    content: "daemonset.apps/openebs-ndm created\r\n"
+  - delay: 20
+    content: "deployment.apps/openebs-ndm-operator created\r\n"
+  - delay: 20
+    content: "deployment.apps/openebs-admission-server created\r\n"
+  - delay: 23
+    content: "deployment.apps/openebs-localpv-provisioner created\r\n\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 2000
+    content: c
+  - delay: 150
+    content: l
+  - delay: 150
+    content: e
+  - delay: 150
+    content: a
+  - delay: 150
+    content: r
+  - delay: 200
+    content: "\r\n\e[3J\e[H\e[2J\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 56
+    content: "# "
+  - delay: 60
+    content: 'C'
+  - delay: 94
+    content: 'o'
+  - delay: 63
+    content: 'n'
+  - delay: 81
+    content: 'f'
+  - delay: 120
+    content: 'i'
+  - delay: 152
+    content: 'r'
+  - delay: 131
+    content: 'm'
+  - delay: 94
+    content: ' '
+  - delay: 63
+    content: "O"
+  - delay: 120
+    content: 'p'
+  - delay: 152
+    content: 'e'
+  - delay: 131
+    content: 'n'
+  - delay: 94
+    content: "E"
+  - delay: 63
+    content: "B"
+  - delay: 94
+    content: "S"
+  - delay: 63
+    content: ' '
+  - delay: 81
+    content: 'p'
+  - delay: 120
+    content: 'o'
+  - delay: 152
+    content: 'd'
+  - delay: 131
+    content: 's'
+  - delay: 94
+    content: ' '
+  - delay: 63
+    content: 'a'
+  - delay: 120
+    content: 'r'
+  - delay: 152
+    content: 'e'
+  - delay: 131
+    content: ' '
+  - delay: 94
+    content: 'd'
+  - delay: 63
+    content: 'e'
+  - delay: 94
+    content: 'p'
+  - delay: 63
+    content: 'l'
+  - delay: 81
+    content: 'o'
+  - delay: 120
+    content: 'y'
+  - delay: 152
+    content: 'e'
+  - delay: 131
+    content: "d\r\n"
+  - delay: 100
+    content: "\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 425
+    content: "kubectl get pods -n openebs"
+  - delay: 1185
+    content: "\r\n"
+  - delay: 103
+    content: "NAME                                           READY   STATUS    RESTARTS   AGE\r\nmaya-apiserver-77b49c99f5-g2cxs                0/1     Running   2          40s\r\nopenebs-admission-server-77d489c57d-8w48m      1/1     Running   0          39s\r\nopenebs-localpv-provisioner-8447b496c7-69tcz   1/1     Running   0          39s\r\nopenebs-ndm-4l4lw                              1/1     Running   0          39s\r\nopenebs-ndm-56gc4                              1/1     Running   0          39s\r\nopenebs-ndm-operator-f64c5bb7-l4kh2            1/1     Running   1          39s\r\nopenebs-ndm-qmfrj                              1/1     Running   0          39s\r\nopenebs-ndm-xbkkj                              1/1     Running   0          39s\r\nopenebs-provisioner-557d489db8-6cdvk           1/1     Running   0          40s\r\nopenebs-snapshot-operator-6d48b74fdb-n6v2l     2/2     Running   0          40s\r\n\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 2000
+    content: c
+  - delay: 150
+    content: l
+  - delay: 150
+    content: e
+  - delay: 150
+    content: a
+  - delay: 150
+    content: r
+  - delay: 200
+    content: "\r\n\e[3J\e[H\e[2J\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 120
+    content: "#"
+  - delay: 152
+    content: ' '
+  - delay: 131
+    content: 'G'
+  - delay: 94
+    content: 'e'
+  - delay: 63
+    content: 't'
+  - delay: 81
+    content: ' '
+  - delay: 120
+    content: 'l'
+  - delay: 152
+    content: 'i'
+  - delay: 131
+    content: 's'
+  - delay: 94
+    content: 't'
+  - delay: 63
+    content: ' '
+  - delay: 120
+    content: 'o'
+  - delay: 152
+    content: 'f'
+  - delay: 131
+    content: ' '
+  - delay: 94
+    content: 'Bl'
+  - delay: 63
+    content: 'o'
+  - delay: 120
+    content: 'c'
+  - delay: 120
+    content: 'k'
+  - delay: 152
+    content: 'd'
+  - delay: 131
+    content: "e"
+  - delay: 94
+    content: "v"
+  - delay: 63
+    content: "i"
+  - delay: 120
+    content: 'c'
+  - delay: 152
+    content: 'e'
+  - delay: 131
+    content: "s\r\n"
+  - delay: 100
+    content: "\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 1542
+    content: kubectl get blockdevices
+  - delay: 829
+    content: ' '
+  - delay: 182
+    content: '-'
+  - delay: 310
+    content: 'n'
+  - delay: 1128
+    content: ' '
+  - delay: 120
+    content: o
+  - delay: 152
+    content: p
+  - delay: 131
+    content: e
+  - delay: 94
+    content: 'n'
+  - delay: 63
+    content: e
+  - delay: 81
+    content: b
+  - delay: 98
+    content: s
+  - delay: 500
+    content: "\r\n"
+  - delay: 68
+    content: "NAME                                           NODENAME                        SIZE           CLAIMSTATE   STATUS   AGE\r\nblockdevice-053f6bfd274abda24a6ab91124434128   ip-172-20-35-96.ec2.internal    107374182400   Unclaimed    Active   52s\r\nblockdevice-25d792782cabf3500ff16c097442b9d5   ip-172-20-34-108.ec2.internal   107374182400   Unclaimed    Active   52s\r\nblockdevice-2edad225d0451fa420e5f64a741ae02c   ip-172-20-39-58.ec2.internal    107374182400   Unclaimed    Active   52s\r\nblockdevice-39b1f151ad8ee6ab8378d76f7bc21ade   ip-172-20-42-34.ec2.internal    107374182400   Unclaimed    Active   52s\r\nblockdevice-556fe3d1ed8c22bca1f29d5991498b97   ip-172-20-42-34.ec2.internal    107374182400   Unclaimed    Active   52s\r\nblockdevice-8c49ca3cac47d13ee642fb9b47b28246   ip-172-20-39-58.ec2.internal    107374182400   Unclaimed    Active   52s\r\nblockdevice-aea593107d5b6891076182c86f56278e   ip-172-20-34-108.ec2.internal   107374182400   Unclaimed    Active   52s\r\nblockdevice-d131f49dad3537d16cf9de4a2acf2953   ip-172-20-35-96.ec2.internal    107374182400   Unclaimed    Active   52s\r\n\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 2000
+    content: c
+  - delay: 118
+    content: l
+  - delay: 98
+    content: e
+  - delay: 129
+    content: a
+  - delay: 56
+    content: r
+  - delay: 200
+    content: "\r\n\e[3J\e[H\e[2J\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 120
+    content: "#"
+  - delay: 152
+    content: ' '
+  - delay: 131
+    content: 'Ex'
+  - delay: 94
+    content: 't'
+  - delay: 63
+    content: 'ract '
+  - delay: 81
+    content: 'and'
+  - delay: 120
+    content: ' '
+  - delay: 152
+    content: 'co'
+  - delay: 131
+    content: 'py'
+  - delay: 94
+    content: ' '
+  - delay: 94
+    content: 'Bl'
+  - delay: 63
+    content: 'o'
+  - delay: 120
+    content: 'c'
+  - delay: 120
+    content: 'k'
+  - delay: 152
+    content: 'd'
+  - delay: 131
+    content: "e"
+  - delay: 94
+    content: "v"
+  - delay: 63
+    content: "i"
+  - delay: 120
+    content: 'c'
+  - delay: 152
+    content: 'e'
+  - delay: 100
+    content: ' '
+  - delay: 120
+    content: 'n'
+  - delay: 152
+    content: 'a'
+  - delay: 131
+    content: 'm'
+  - delay: 94
+    content: 'e'
+  - delay: 94
+    content: 's'
+  - delay: 100
+    content: "\r\n"
+  - delay: 100
+    content: "\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 7371
+    content: kubectl get blockdevices -n openebs
+  - delay: 4000
+    content: '|'
+  - delay: 1000
+    content: a
+  - delay: 60
+    content: w
+  - delay: 60
+    content: k
+  - delay: 57
+    content: ' '
+  - delay: 60
+    content: ''''
+  - delay: 100
+    content: '{'
+  - delay: 100
+    content: p
+  - delay: 100
+    content: r
+  - delay: 60
+    content: i
+  - delay: 100
+    content: 'n'
+  - delay: 100
+    content: t
+  - delay: 100
+    content: ' '
+  - delay: 100
+    content: $
+  - delay: 260
+    content: '1'
+  - delay: 1408
+    content: '}'
+  - delay: 1984
+    content: ''''
+  - delay: 935
+    content: "\r\n"
+  - delay: 94
+    content: "NAME\r\nblockdevice-053f6bfd274abda24a6ab91124434128\r\nblockdevice-25d792782cabf3500ff16c097442b9d5\r\nblockdevice-2edad225d0451fa420e5f64a741ae02c\r\nblockdevice-39b1f151ad8ee6ab8378d76f7bc21ade\r\nblockdevice-556fe3d1ed8c22bca1f29d5991498b97\r\nblockdevice-8c49ca3cac47d13ee642fb9b47b28246\r\nblockdevice-aea593107d5b6891076182c86f56278e\r\nblockdevice-d131f49dad3537d16cf9de4a2acf2953\r\n\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 2000
+    content: c
+  - delay: 118
+    content: l
+  - delay: 98
+    content: e
+  - delay: 129
+    content: a
+  - delay: 56
+    content: r
+  - delay: 200
+    content: "\r\n\e[3J\e[H\e[2J\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 120
+    content: "#"
+  - delay: 152
+    content: ' '
+  - delay: 131
+    content: 'C'
+  - delay: 94
+    content: 'r'
+  - delay: 63
+    content: 'e'
+  - delay: 81
+    content: 'at'
+  - delay: 120
+    content: 'e a'
+  - delay: 152
+    content: ' '
+  - delay: 131
+    content: "St"
+  - delay: 94
+    content: 'or'
+  - delay: 94
+    content: 'a'
+  - delay: 63
+    content: 'g'
+  - delay: 120
+    content: 'e'
+  - delay: 120
+    content: "Po"
+  - delay: 152
+    content: 'ol'
+  - delay: 131
+    content: "C"
+  - delay: 94
+    content: "l"
+  - delay: 63
+    content: "a"
+  - delay: 120
+    content: 'i'
+  - delay: 152
+    content: 'm'
+  - delay: 100
+    content: "\r\n"
+  - delay: 100
+    content: "\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 1000
+    content: "cat <<EOF | kubectl apply -f -\r\n> apiVersion: openebs.io/v1alpha1\r\n> kind: StoragePoolClaim\r\n> metadata:\r\n>   name: cstor-disk-pool\r\n>   annotations:\r\n>     cas.openebs.io/config: |\r\n>       - name: PoolResourceRequests\r\n>         value: |-\r\n>             memory: 2Gi\r\n>       - name: PoolResourceLimits\r\n>         value: |-\r\n>             memory: 4Gi\r\n> spec:\r\n>   name: cstor-disk-pool\r\n>   type: disk\r\n>   poolSpec:\r\n>     poolType: mirrored\r\n>   blockDevices:\r\n>     blockDeviceList:\r\n>     - blockdevice-053f6bfd274abda24a6ab91124434128\r\n>     - blockdevice-25d792782cabf3500ff16c097442b9d5\r\n>     - blockdevice-2edad225d0451fa420e5f64a741ae02c\r\n>     - blockdevice-39b1f151ad8ee6ab8378d76f7bc21ade\r\n>     - blockdevice-556fe3d1ed8c22bca1f29d5991498b97\r\n>     - blockdevice-8c49ca3cac47d13ee642fb9b47b28246\r\n>     - blockdevice-aea593107d5b6891076182c86f56278e\r\n>     - blockdevice-d131f49dad3537d16cf9de4a2acf2953\r\n> EOF"
+  - delay: 1158
+    content: "\r\n"
+  - delay: 239
+    content: "storagepoolclaim.openebs.io/cstor-disk-pool created\r\n\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 2000
+    content: c
+  - delay: 118
+    content: l
+  - delay: 98
+    content: e
+  - delay: 129
+    content: a
+  - delay: 56
+    content: r
+  - delay: 200
+    content: "\r\n\e[3J\e[H\e[2J\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 120
+    content: "#"
+  - delay: 152
+    content: ' '
+  - delay: 131
+    content: 'L'
+  - delay: 94
+    content: 'i'
+  - delay: 63
+    content: 'st'
+  - delay: 81
+    content: ' '
+  - delay: 120
+    content: 'St'
+  - delay: 152
+    content: 'o'
+  - delay: 131
+    content: 'r'
+  - delay: 94
+    content: 'ag'
+  - delay: 94
+    content: 'e'
+  - delay: 63
+    content: 'Po'
+  - delay: 120
+    content: 'ol'
+  - delay: 120
+    content: 'C'
+  - delay: 152
+    content: 'l'
+  - delay: 131
+    content: "a"
+  - delay: 94
+    content: "i"
+  - delay: 63
+    content: "m"
+  - delay: 120
+    content: 's'
+  - delay: 100
+    content: "\r\n"
+  - delay: 100
+    content: "\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 2714
+    content: k
+  - delay: 191
+    content: u
+  - delay: 199
+    content: b
+  - delay: 57
+    content: e
+  - delay: 63
+    content: c
+  - delay: 190
+    content: t
+  - delay: 82
+    content: l
+  - delay: 57
+    content: ' '
+  - delay: 130
+    content: g
+  - delay: 107
+    content: e
+  - delay: 64
+    content: t
+  - delay: 56
+    content: ' '
+  - delay: 962
+    content: s
+  - delay: 97
+    content: p
+  - delay: 697
+    content: c
+  - delay: 765
+    content: "\r\n"
+  - delay: 73
+    content: "NAME              AGE\r\ncstor-disk-pool   7s\r\n\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 2000
+    content: c
+  - delay: 118
+    content: l
+  - delay: 98
+    content: e
+  - delay: 129
+    content: a
+  - delay: 56
+    content: r
+  - delay: 200
+    content: "\r\n\e[3J\e[H\e[2J\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 120
+    content: "#"
+  - delay: 152
+    content: ' '
+  - delay: 131
+    content: 'V'
+  - delay: 94
+    content: 'er'
+  - delay: 63
+    content: 'i'
+  - delay: 81
+    content: 'fy'
+  - delay: 120
+    content: ' '
+  - delay: 63
+    content: 'i'
+  - delay: 81
+    content: 'f'
+  - delay: 120
+    content: ' '
+  - delay: 152
+    content: 'cS'
+  - delay: 131
+    content: 't'
+  - delay: 94
+    content: 'o'
+  - delay: 94
+    content: 'r'
+  - delay: 63
+    content: ' '
+  - delay: 120
+    content: 'Po'
+  - delay: 120
+    content: 'ol'
+  - delay: 152
+    content: ' '
+  - delay: 131
+    content: "i"
+  - delay: 94
+    content: "s"
+  - delay: 63
+    content: ' '
+  - delay: 120
+    content: 'c'
+  - delay: 120
+    content: 'r'
+  - delay: 120
+    content: 'e'
+  - delay: 152
+    content: 'a'
+  - delay: 131
+    content: "t"
+  - delay: 94
+    content: "e"
+  - delay: 63
+    content: 'd'
+  - delay: 100
+    content: "\r\n"
+  - delay: 100
+    content: "\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 4310
+    content: kubectl get spc
+  - delay: 1127
+    content: "\b\e[K"
+  - delay: 255
+    content: "\b\e[K"
+  - delay: 225
+    content: "\b\e[K"
+  - delay: 1000
+    content: c
+  - delay: 56
+    content: s
+  - delay: 79
+    content: p
+  - delay: 573
+    content: ' '
+  - delay: 268
+    content: '-'
+  - delay: 599
+    content: 'n'
+  - delay: 294
+    content: o
+  - delay: 163
+    content: p
+  - delay: 210
+    content: e
+  - delay: 24
+    content: 'n'
+  - delay: 1151
+    content: e
+  - delay: 97
+    content: b
+  - delay: 80
+    content: s
+  - delay: 423
+    content: "\r\n"
+  - delay: 79
+    content: "NAME                   ALLOCATED   FREE    CAPACITY   STATUS    TYPE       AGE\r\ncstor-disk-pool-2q5h   78.5K       99.5G   99.5G      Healthy   mirrored   26s\r\ncstor-disk-pool-ak8a   78.5K       99.5G   99.5G      Healthy   mirrored   26s\r\ncstor-disk-pool-lqi0   78.5K       99.5G   99.5G      Healthy   mirrored   25s\r\ncstor-disk-pool-u0mq   78.5K       99.5G   99.5G      Healthy   mirrored   26s\r\n\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 2000
+    content: c
+  - delay: 118
+    content: l
+  - delay: 98
+    content: e
+  - delay: 129
+    content: a
+  - delay: 56
+    content: r
+  - delay: 200
+    content: "\r\n\e[3J\e[H\e[2J\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 120
+    content: "#"
+  - delay: 152
+    content: ' '
+  - delay: 131
+    content: 'C'
+  - delay: 94
+    content: 're'
+  - delay: 63
+    content: 'a'
+  - delay: 81
+    content: 'te'
+  - delay: 120
+    content: ' '
+  - delay: 63
+    content: 'a'
+  - delay: 81
+    content: ' '
+  - delay: 120
+    content: 'S'
+  - delay: 152
+    content: 'to'
+  - delay: 131
+    content: 'r'
+  - delay: 94
+    content: 'a'
+  - delay: 94
+    content: 'ge'
+  - delay: 63
+    content: 'C'
+  - delay: 120
+    content: 'l'
+  - delay: 120
+    content: 'a'
+  - delay: 152
+    content: 's'
+  - delay: 131
+    content: "s"
+  - delay: 100
+    content: "\r\n"
+  - delay: 100
+    content: "\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 1423
+    content: "cat <<EOF | kubectl apply -f -\r\n> apiVersion: storage.k8s.io/v1\r\n> kind: StorageClass\r\n> metadata:\r\n>   name: openebs-cstor\r\n>   annotations:\r\n>     openebs.io/cas-type: cstor\r\n>     cas.openebs.io/config: |\r\n>       - name: StoragePoolClaim\r\n>         value: \"cstor-disk-pool\"\r\n>       - name: ReplicaCount\r\n>         value: \"3\"\r\n> provisioner: openebs.io/provisioner-iscsi\r\n> EOF"
+  - delay: 7069
+    content: "\r\n"
+  - delay: 187
+    content: "storageclass.storage.k8s.io/openebs-cstor created\r\n\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 2000
+    content: c
+  - delay: 118
+    content: l
+  - delay: 98
+    content: e
+  - delay: 129
+    content: a
+  - delay: 56
+    content: r
+  - delay: 200
+    content: "\r\n\e[3J\e[H\e[2J\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 120
+    content: "#"
+  - delay: 152
+    content: ' '
+  - delay: 131
+    content: 'V'
+  - delay: 94
+    content: 'er'
+  - delay: 63
+    content: 'i'
+  - delay: 81
+    content: 'fy'
+  - delay: 120
+    content: ' '
+  - delay: 63
+    content: 'i'
+  - delay: 81
+    content: 'f'
+  - delay: 120
+    content: ' '
+  - delay: 152
+    content: 'S'
+  - delay: 131
+    content: 't'
+  - delay: 94
+    content: 'o'
+  - delay: 94
+    content: 'r'
+  - delay: 63
+    content: 'a'
+  - delay: 120
+    content: 'g'
+  - delay: 120
+    content: 'e'
+  - delay: 152
+    content: 'C'
+  - delay: 131
+    content: "la"
+  - delay: 94
+    content: "ss"
+  - delay: 63
+    content: ' '
+  - delay: 131
+    content: "i"
+  - delay: 94
+    content: "s"
+  - delay: 63
+    content: ' '
+  - delay: 120
+    content: 'c'
+  - delay: 120
+    content: 'r'
+  - delay: 120
+    content: 'e'
+  - delay: 152
+    content: 'a'
+  - delay: 131
+    content: "t"
+  - delay: 94
+    content: "e"
+  - delay: 63
+    content: 'd'
+  - delay: 100
+    content: "\r\n"
+  - delay: 100
+    content: "\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 1485
+    content: k
+  - delay: 212
+    content: u
+  - delay: 183
+    content: b
+  - delay: 42
+    content: e
+  - delay: 79
+    content: c
+  - delay: 204
+    content: t
+  - delay: 67
+    content: l
+  - delay: 63
+    content: ' '
+  - delay: 122
+    content: g
+  - delay: 55
+    content: e
+  - delay: 85
+    content: t
+  - delay: 74
+    content: ' '
+  - delay: 2731
+    content: s
+  - delay: 214
+    content: c
+  - delay: 1682
+    content: "\r\n"
+  - delay: 158
+    content: "NAME                        PROVISIONER                                                AGE\r\ndefault                     kubernetes.io/aws-ebs                                      3h54m\r\ngp2 (default)               kubernetes.io/aws-ebs                                      3h54m\r\nopenebs-cstor               openebs.io/provisioner-iscsi                               7s\r\nopenebs-device              openebs.io/local                                           7m37s\r\nopenebs-hostpath            openebs.io/local                                           7m37s\r\nopenebs-jiva-default        openebs.io/provisioner-iscsi                               7m38s\r\nopenebs-snapshot-promoter   volumesnapshot.external-storage.k8s.io/snapshot-promoter   7m37s\r\n\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 2000
+    content: c
+  - delay: 118
+    content: l
+  - delay: 98
+    content: e
+  - delay: 129
+    content: a
+  - delay: 56
+    content: r
+  - delay: 200
+    content: "\r\n\e[3J\e[H\e[2J\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 120
+    content: '#'
+  - delay: 203
+    content: ' '
+  - delay: 120
+    content: C
+  - delay: 130
+    content: l
+  - delay: 121
+    content: o
+  - delay: 123
+    content: 'n'
+  - delay: 76
+    content: e
+  - delay: 100
+    content: ' '
+  - delay: 130
+    content: O
+  - delay: 134
+    content: p
+  - delay: 156
+    content: e
+  - delay: 160
+    content: 'n'
+  - delay: 124
+    content: E
+  - delay: 126
+    content: B
+  - delay: 83
+    content: S
+  - delay: 137
+    content: ' '
+  - delay: 146
+    content: r
+  - delay: 56
+    content: e
+  - delay: 77
+    content: p
+  - delay: 202
+    content: o
+  - delay: 94
+    content: ' '
+  - delay: 200
+    content: f
+  - delay: 133
+    content: o
+  - delay: 67
+    content: r
+  - delay: 79
+    content: ' '
+  - delay: 112
+    content: e
+  - delay: 133
+    content: x
+  - delay: 111
+    content: a
+  - delay: 96
+    content: m
+  - delay: 152
+    content: p
+  - delay: 157
+    content: l
+  - delay: 91
+    content: e
+  - delay: 155
+    content: ' '
+  - delay: 134
+    content: w
+  - delay: 155
+    content: o
+  - delay: 105
+    content: r
+  - delay: 141
+    content: k
+  - delay: 150
+    content: l
+  - delay: 180
+    content: o
+  - delay: 50
+    content: a
+  - delay: 82
+    content: d
+  - delay: 149
+    content: ' '
+  - delay: 149
+    content: m
+  - delay: 94
+    content: a
+  - delay: 85
+    content: 'n'
+  - delay: 170
+    content: i
+  - delay: 120
+    content: f
+  - delay: 75
+    content: e
+  - delay: 162
+    content: s
+  - delay: 156
+    content: t
+  - delay: 177
+    content: ' '
+  - delay: 70
+    content: f
+  - delay: 114
+    content: i
+  - delay: 176
+    content: l
+  - delay: 64
+    content: e
+  - delay: 167
+    content: s
+  - delay: 123
+    content: "\r\n\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 196
+    content: g
+  - delay: 70
+    content: i
+  - delay: 110
+    content: t
+  - delay: 110
+    content: ' '
+  - delay: 192
+    content: c
+  - delay: 117
+    content: l
+  - delay: 159
+    content: o
+  - delay: 113
+    content: 'n'
+  - delay: 89
+    content: e
+  - delay: 84
+    content: ' '
+  - delay: 841
+    content: 'https://github.com/openebs/openebs.git'
+  - delay: 408
+    content: "\r\nCloning into 'openebs'...\r\n"
+  - delay: 219
+    content: "remote: Enumerating objects: 46, done.\e[K\r\nremote: Counting objects:   2% (1/46)\e[K\rremote: Counting objects:   4% (2/46)\e[K\rremote: Counting objects:   6% (3/46)\e[K\rremote: Counting objects:   8% (4/46)\e[K\rremote: Counting objects:  10% (5/46)\e[K\rremote: Counting objects:  13% (6/46)\e[K\rremote: Counting objects:  15% (7/46)\e[K\rremote: Counting objects:  17% (8/46)\e[K\rremote: Counting objects:  19% (9/46)\e[K\rremote: Counting objects:  21% (10/46)\e[K\rremote: Counting objects:  23% (11/46)\e[K\rremote: Counting objects:  26% (12/46)\e[K\rremote: Counting objects:  28% (13/46)\e[K\rremote: Counting objects:  30% (14/46)\e[K\rremote: Counting objects:  32% (15/46)\e[K\rremote: Counting objects:  34% (16/46)\e[K\rremote: Counting objects:  36% (17/46)\e[K\rremote: Counting objects:  39% (18/46)\e[K\rremote: Counting objects:  41% (19/46)\e[K\rremote: Counting objects:  43% (20/46)\e[K\rremote: Counting objects:  45% (21/46)\e[K\rremote: Counting objects:  47% (22/46)\e[K\rremote: Counting objects:  50% (23/46)\e[K\rremote: Counting objects:  52% (24/46)\e[K\rremote: Counting objects:  54% (25/46)\e[K\rremote: Counting objects:  56% (26/46)\e[K\rremote: Counting objects:  58% (27/46)\e[K\rremote: Counting objects:  60% (28/46)\e[K\rremote: Counting objects:  63% (29/46)\e[K\rremote: Counting objects:  65% (30/46)\e[K\rremote: Counting objects:  67% (31/46)\e[K\rremote: Counting objects:  69% (32/46)\e[K\rremote: Counting objects:  71% (33/46)\e[K\rremote: Counting objects:  73% (34/46)\e[K\rremote: Counting objects:  76% (35/46)\e[K\rremote: Counting objects:  78% (36/46)\e[K\rremote: Counting objects:  80% (37/46)\e[K\rremote: Counting objects:  82% (38/46)\e[K\rremote: Counting objects:  84% (39/46)\e[K\rremote: Counting objects:  86% (40/46)\e[K\rremote: Counting objects:  89% (41/46)\e[K\rremote: Counting objects:  91% (42/46)\e[K\rremote: Counting objects:  93% (43/46)\e[K\rremote: Counting objects:  95% (44/46)\e[K\rremote: Counting objects:  97% (45/46)\e[K\rremote: Counting objects: 100% (46/46)\e[K\rremote: Counting objects: 100% (46/46), done.\e[K\r\nremote: Compressing objects:   2% (1/37)\e[K\rremote: Compressing objects:   5% (2/37)\e[K\rremote: Compressing objects:   8% (3/37)\e[K\rremote: Compressing objects:  10% (4/37)\e[K\rremote: Compressing objects:  13% (5/37)\e[K\rremote: Compressing objects:  16% (6/37)\e[K\rremote: Compressing objects:  18% (7/37)\e[K\rremote: Compressing objects:  21% (8/37)\e[K\rremote: Compressing objects:  24% (9/37)\e[K\rremote: Compressing objects:  27% (10/37)\e[K\rremote: Compressing objects:  29% (11/37)\e[K\rremote: Compressing objects:  32% (12/37)\e[K\rremote: Compressing objects:  35% (13/37)\e[K\rremote: Compressing objects:  37% (14/37)\e[K\rremote: Compressing objects:  40% (15/37)\e[K\rremote: Compressing objects:  43% (16/37)\e[K\rremote: Compressing objects:  45% (17/37)\e[K\rremote: Compressing objects:  48% (18/37)\e[K\rremote: Compressing objects:  51% (19/37)\e[K\rremote: Compressing objects:  54% (20/37)\e[K\rremote: Compressing objects:  56% (21/37)\e[K\rremote: Compressing objects:  59% (22/37)\e[K\rremote: Compressing objects:  62% (23/37)\e[K\rremote: Compressing objects:  64% (24/37)\e[K\rremote: Compressing objects:  67% (25/37)\e[K\rremote: Compressing objects:  70% (26/37)\e[K\rremote: Compressing objects:  72% (27/37)\e[K\rremote: Compressing objects:  75% (28/37)\e[K\rremote: Compressing objects:  78% (29/37)\e[K\rremote: Compressing objects:  81% (30/37)\e[K\rremote: Compressing objects:  83% (31/37)\e[K\rremote: Compressing objects:  86% (32/37)\e[K\rremote: Compressing objects:  89% (33/37)\e[K\rremote: Compressing objects:  91% (34/37)\e[K\rremote: Compressing objects:  94% (35/37)\e[K\rremote: Compressing objects:  97% (36/37)\e[K\rremote: Compressing objects: 100% (37/37)\e[K\rremote: Compressing objects: 100% (37/37), done.\e[K\r\nReceiving objects:   0% (1/18990)   \rReceiving objects:   1% (190/18990)   \rReceiving objects:   2% (380/18990)   \rReceiving objects:   3% (570/18990)   \rReceiving objects:   4% (760/18990)   \rReceiving objects:   5% (950/18990)   \rReceiving objects:   6% (1140/18990)   \rReceiving objects:   7% (1330/18990)   \rReceiving objects:   8% (1520/18990)   \rReceiving objects:   9% (1710/18990)   \rReceiving objects:  10% (1899/18990)   \rReceiving objects:  11% (2089/18990)   \rReceiving objects:  12% (2279/18990)   \rReceiving objects:  13% (2469/18990)   \rReceiving objects:  14% (2659/18990)   \r"
+  - delay: 7
+    content: "Receiving objects:  15% (2849/18990)   \r"
+  - delay: 42
+    content: "Receiving objects:  16% (3039/18990)   \r"
+  - delay: 10
+    content: "Receiving objects:  17% (3229/18990)   \rReceiving objects:  18% (3419/18990)   \rReceiving objects:  19% (3609/18990)   \rReceiving objects:  20% (3798/18990)   \rReceiving objects:  21% (3988/18990)   \r"
+  - delay: 47
+    content: "Receiving objects:  22% (4178/18990)   \r"
+  - delay: 5
+    content: "Receiving objects:  23% (4368/18990)   \rReceiving objects:  24% (4558/18990)   \rReceiving objects:  25% (4748/18990)   \rReceiving objects:  26% (4938/18990)   \rReceiving objects:  27% (5128/18990)   \rReceiving objects:  28% (5318/18990)   \r"
+  - delay: 22
+    content: "Receiving objects:  29% (5508/18990)   \rReceiving objects:  30% (5697/18990)   \r"
+  - delay: 192
+    content: "Receiving objects:  31% (5887/18990)   \rReceiving objects:  32% (6077/18990)   \rReceiving objects:  33% (6267/18990)   \rReceiving objects:  34% (6457/18990)   \rReceiving objects:  35% (6647/18990)   \rReceiving objects:  36% (6837/18990)   \rReceiving objects:  37% (7027/18990)   \rReceiving objects:  38% (7217/18990)   \rReceiving objects:  39% (7407/18990)   \rReceiving objects:  40% (7596/18990)   \rReceiving objects:  41% (7786/18990)   \rReceiving objects:  42% (7976/18990)   \rReceiving objects:  43% (8166/18990)   \rReceiving objects:  44% (8356/18990)   \rReceiving objects:  45% (8546/18990)   \rReceiving objects:  46% (8736/18990)   \rReceiving objects:  47% (8926/18990)   \rReceiving objects:  48% (9116/18990)   \rReceiving objects:  49% (9306/18990)   \rReceiving objects:  50% (9495/18990)   \rReceiving objects:  51% (9685/18990)   \rReceiving objects:  52% (9875/18990)   \rReceiving objects:  53% (10065/18990)   \rReceiving objects:  54% (10255/18990)   \rReceiving objects:  55% (10445/18990)   \rReceiving objects:  56% (10635/18990)   \rReceiving objects:  57% (10825/18990)   \rReceiving objects:  58% (11015/18990)   \rReceiving objects:  59% (11205/18990)   \rReceiving objects:  60% (11394/18990)   \rReceiving objects:  61% (11584/18990)   \rReceiving objects:  62% (11774/18990)   \rReceiving objects:  63% (11964/18990)   \rReceiving objects:  64% (12154/18990)   \rReceiving objects:  65% (12344/18990)   \rReceiving objects:  66% (12534/18990)   \rReceiving objects:  67% (12724/18990)   \rReceiving objects:  68% (12914/18990)   \rReceiving objects:  69% (13104/18990)   \rReceiving objects:  70% (13293/18990)   \r"
+  - delay: 95
+    content: "Receiving objects:  71% (13483/18990), 18.13 MiB | 36.25 MiB/s   \rReceiving objects:  72% (13673/18990), 18.13 MiB | 36.25 MiB/s   \rReceiving objects:  73% (13863/18990), 18.13 MiB | 36.25 MiB/s   \rReceiving objects:  74% (14053/18990), 18.13 MiB | 36.25 MiB/s   \rReceiving objects:  75% (14243/18990), 18.13 MiB | 36.25 MiB/s   \rReceiving objects:  76% (14433/18990), 18.13 MiB | 36.25 MiB/s   \rReceiving objects:  77% (14623/18990), 18.13 MiB | 36.25 MiB/s   \rReceiving objects:  78% (14813/18990), 18.13 MiB | 36.25 MiB/s   \rReceiving objects:  79% (15003/18990), 18.13 MiB | 36.25 MiB/s   \rReceiving objects:  80% (15192/18990), 18.13 MiB | 36.25 MiB/s   \rReceiving objects:  81% (15382/18990), 18.13 MiB | 36.25 MiB/s   \rReceiving objects:  82% (15572/18990), 18.13 MiB | 36.25 MiB/s   \rReceiving objects:  83% (15762/18990), 18.13 MiB | 36.25 MiB/s   \rReceiving objects:  84% (15952/18990), 18.13 MiB | 36.25 MiB/s   \rReceiving objects:  85% (16142/18990), 18.13 MiB | 36.25 MiB/s   \rReceiving objects:  86% (16332/18990), 18.13 MiB | 36.25 MiB/s   \rReceiving objects:  87% (16522/18990), 18.13 MiB | 36.25 MiB/s   \rReceiving objects:  88% (16712/18990), 18.13 MiB | 36.25 MiB/s   \r"
+  - delay: 6
+    content: "Receiving objects:  89% (16902/18990), 18.13 MiB | 36.25 MiB/s   \rReceiving objects:  90% (17091/18990), 18.13 MiB | 36.25 MiB/s   \rReceiving objects:  91% (17281/18990), 18.13 MiB | 36.25 MiB/s   \rReceiving objects:  92% (17471/18990), 18.13 MiB | 36.25 MiB/s   \r"
+  - delay: 26
+    content: "Receiving objects:  93% (17661/18990), 18.13 MiB | 36.25 MiB/s   \rReceiving objects:  94% (17851/18990), 18.13 MiB | 36.25 MiB/s   \rReceiving objects:  95% (18041/18990), 18.13 MiB | 36.25 MiB/s   \r"
+  - delay: 5
+    content: "Receiving objects:  96% (18231/18990), 18.13 MiB | 36.25 MiB/s   \rReceiving objects:  97% (18421/18990), 18.13 MiB | 36.25 MiB/s   \rremote: Total 18990 (delta 16), reused 19 (delta 7), pack-reused 18944\e[K\r\nReceiving objects:  98% (18611/18990), 18.13 MiB | 36.25 MiB/s   \rReceiving objects:  99% (18801/18990), 18.13 MiB | 36.25 MiB/s   \rReceiving objects: 100% (18990/18990), 18.13 MiB | 36.25 MiB/s   \rReceiving objects: 100% (18990/18990), 21.64 MiB | 36.25 MiB/s, done.\r\nResolving deltas:   0% (0/12606)   \rResolving deltas:   1% (131/12606)   \rResolving deltas:   2% (258/12606)   \rResolving deltas:   3% (379/12606)   \rResolving deltas:   4% (510/12606)   \rResolving deltas:   5% (651/12606)   \rResolving deltas:   6% (792/12606)   \rResolving deltas:   7% (883/12606)   \rResolving deltas:   8% (1030/12606)   \rResolving deltas:   9% (1143/12606)   \rResolving deltas:  10% (1267/12606)   \rResolving deltas:  11% (1406/12606)   \rResolving deltas:  12% (1525/12606)   \rResolving deltas:  13% (1648/12606)   \rResolving deltas:  14% (1775/12606)   \rResolving deltas:  15% (1903/12606)   \rResolving deltas:  16% (2062/12606)   \rResolving deltas:  17% (2145/12606)   \rResolving deltas:  18% (2345/12606)   \rResolving deltas:  19% (2401/12606)   \rResolving deltas:  20% (2524/12606)   \rResolving deltas:  21% (2659/12606)   \rResolving deltas:  22% (2784/12606)   \rResolving deltas:  23% (2901/12606)   \rResolving deltas:  24% (3033/12606)   \rResolving deltas:  25% (3166/12606)   \rResolving deltas:  26% (3279/12606)   \rResolving deltas:  27% (3404/12606)   \rResolving deltas:  28% (3570/12606)   \r"
+  - delay: 6
+    content: "Resolving deltas:  35% (4535/12606)   \rResolving deltas:  36% (4576/12606)   \rResolving deltas:  37% (4691/12606)   \rResolving deltas:  38% (4900/12606)   \rResolving deltas:  39% (5042/12606)   \rResolving deltas:  40% (5073/12606)   \rResolving deltas:  41% (5173/12606)   \rResolving deltas:  42% (5298/12606)   \rResolving deltas:  43% (5433/12606)   \rResolving deltas:  44% (5548/12606)   \rResolving deltas:  45% (5687/12606)   \rResolving deltas:  46% (5806/12606)   \rResolving deltas:  47% (5980/12606)   \rResolving deltas:  48% (6053/12606)   \rResolving deltas:  49% (6185/12606)   \rResolving deltas:  50% (6314/12606)   \rResolving deltas:  51% (6455/12606)   \rResolving deltas:  52% (6557/12606)   \rResolving deltas:  53% (6687/12606)   \rResolving deltas:  54% (6834/12606)   \rResolving deltas:  55% (6954/12606)   \rResolving deltas:  56% (7073/12606)   \rResolving deltas:  57% (7187/12606)   \rResolving deltas:  58% (7320/12606)   \rResolving deltas:  59% (7456/12606)   \rResolving deltas:  60% (7570/12606)   \rResolving deltas:  61% (7692/12606)   \rResolving deltas:  63% (7957/12606)   \rResolving deltas:  64% (8120/12606)   \rResolving deltas:  65% (8225/12606)   \rResolving deltas:  66% (8332/12606)   \rResolving deltas:  67% (8484/12606)   \rResolving deltas:  68% (8588/12606)   \rResolving deltas:  69% (8701/12606)   \rResolving deltas:  70% (8826/12606)   \rResolving deltas:  71% (8970/12606)   \rResolving deltas:  72% (9089/12606)   \rResolving deltas:  74% (9404/12606)   \rResolving deltas:  75% (9456/12606)   \rResolving deltas:  76% (9588/12606)   \rResolving deltas:  77% (9711/12606)   \rResolving deltas:  78% (9836/12606)   \rResolving deltas:  79% (9973/12606)   \rResolving deltas:  80% (10091/12606)   \rResolving deltas:  81% (10214/12606)   \rResolving deltas:  82% (10345/12606)   \rResolving deltas:  83% (10473/12606)   \rResolving deltas:  84% (10677/12606)   \rResolving deltas:  86% (10856/12606)   \rResolving deltas:  87% (10982/12606)   \rResolving deltas:  88% (11095/12606)   \rResolving deltas:  89% (11227/12606)   \rResolving deltas:  90% (11346/12606)   \rResolving deltas:  91% (11476/12606)   \rResolving deltas:  92% (11602/12606)   \rResolving deltas:  93% (11724/12606)   \rResolving deltas:  94% (11853/12606)   \rResolving deltas:  95% (11998/12606)   \rResolving deltas:  96% (12115/12606)   \rResolving deltas:  97% (12235/12606)   \rResolving deltas:  98% (12379/12606)   \rResolving deltas:  99% (12483/12606)   \rResolving deltas: 100% (12606/12606)   \rResolving deltas: 100% (12606/12606), done.\r\n"
+  - delay: 122
+    content: "\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 2000
+    content: c
+  - delay: 109
+    content: l
+  - delay: 136
+    content: e
+  - delay: 230
+    content: a
+  - delay: 60
+    content: r
+  - delay: 200
+    content: "\r\n\e[3J\e[H\e[2J\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 120
+    content: "#"
+  - delay: 152
+    content: ' '
+  - delay: 131
+    content: 'Mo'
+  - delay: 94
+    content: 'di'
+  - delay: 63
+    content: 'fy'
+  - delay: 81
+    content: ' '
+  - delay: 120
+    content: 'ma'
+  - delay: 63
+    content: 'ni'
+  - delay: 81
+    content: 'fes'
+  - delay: 120
+    content: 't'
+  - delay: 152
+    content: ' '
+  - delay: 131
+    content: 'fi'
+  - delay: 94
+    content: 'le'
+  - delay: 94
+    content: ' '
+  - delay: 63
+    content: 'to'
+  - delay: 120
+    content: ' '
+  - delay: 120
+    content: 'add'
+  - delay: 152
+    content: ' '
+  - delay: 131
+    content: 'new'
+  - delay: 94
+    content: ' '
+  - delay: 63
+    content: 'Sto'
+  - delay: 131
+    content: "r"
+  - delay: 94
+    content: "a"
+  - delay: 63
+    content: 'g'
+  - delay: 120
+    content: 'e'
+  - delay: 120
+    content: 'C'
+  - delay: 120
+    content: 'l'
+  - delay: 152
+    content: 'a'
+  - delay: 131
+    content: "s"
+  - delay: 94
+    content: "s"
+  - delay: 100
+    content: "\r\n"
+  - delay: 223
+    content: "\e]0;admin@openebs: ~\aadmin@openebs:~$ "
+  - delay: 248
+    content: c
+  - delay: 55
+    content: d
+  - delay: 65
+    content: ' '
+  - delay: 200
+    content: o
+  - delay: 175
+    content: p
+  - delay: 95
+    content: enebs/
+  - delay: 218
+    content: k
+  - delay: 231
+    content: '8'
+  - delay: 129
+    content: s/
+  - delay: 247
+    content: d
+  - delay: 168
+    content: e
+  - delay: 209
+    content: mo/
+  - delay: 288
+    content: m
+  - delay: 183
+    content: 'y'
+  - delay: 161
+    content: sql-replication-cluster/
+  - delay: 192
+    content: s
+  - delay: 152
+    content: t
+  - delay: 103
+    content: atefulset/
+  - delay: 289
+    content: "\r\n\e]0;admin@openebs: ~/openebs/k8s/demo/mysql-replication-cluster/statefulset\aadmin@openebs:~/openebs/k8s/demo/mysql-replication-cluster/statefulset$ "
+  - delay: 240
+    content: l
+  - delay: 120
+    content: s
+  - delay: 111
+    content: "\r\nmysql-configmap.yaml  mysql-statefulset.yaml  mysql-svc.yaml  README.md\r\n\e]0;admin@openebs: ~/openebs/k8s/demo/mysql-replication-cluster/statefulset\aadmin@openebs:~/openebs/k8s/demo/mysql-replication-cluster/statefulset$ "
+  - delay: 4414
+    content: 'n'
+  - delay: 96
+    content: a
+  - delay: 57
+    content: 'n'
+  - delay: 247
+    content: o
+  - delay: 41
+    content: ' '
+  - delay: 103
+    content: m
+  - delay: 273
+    content: 'y'
+  - delay: 295
+    content: "\asql-"
+  - delay: 849
+    content: s
+  - delay: 232
+    content: t
+  - delay: 96
+    content: "atefulse\ret.yaml "
+  - delay: 155
+    content: "\r\n"
+  - delay: 21
+    content: "\e[?1049h\e[1;31r\e(B\e[m\e[4l\e[?7h\e[?1h\e=\e[?1h\e=\e[?1h\e=\e[39;49m\e[?25l\e[39;49m\e(B\e[m\e[H\e[2J\e[29;39H\e(B\e[0;7m[ Reading File ]\e(B\e[m\e[29;38H\e(B\e[0;7m[ Read 176 lines ]\e(B\e[m\e[H\e[39;49m\e(B\e[0;7m  GNU nano 2.7.4                   File: mysql-statefulset.yaml                             \e[3;1H\e(B\e[mapiVersion: apps/v1\r\e[4dkind: StatefulSet\r\e[5dmetadata:\e[6;3Hname: mysql\r\e[7dspec:\e[8;3Hselector:\e[9;5HmatchLabels:\e[10;7Happ: mysql\e[11;3HserviceName: \"mysql\"\e[12;3Hreplicas: 2\e[13;3Htemplate:\e[14;5Hmetadata:\e[15;7Hlabels:\e[16;9Happ: mysql\e[17;5Hspec:\e[18;7HinitContainers:\e[19;7H- name: init-mysql\e[20;9Himage: mysql:5.7\e[21;9Hcommand:\e[22;9H- bash\e[23;9H- \"-c\"\e[24;9H- |\e[25d\bset -ex\e[26;11H# Generate mysql server-id from pod ordinal index.\e[27;11H[[ `hostname` =~ -([0-9]+)$ ]] || exit 1\e[28;11Hordinal=${BASH_REMATCH[1]}\r\e[30d\e(B\e[0;7m^G\e(B\e[m Get Help    \e(B\e[0;7m^O\e(B\e[m Write Out   \e(B\e[0;7m^W\e(B\e[m Where Is    \e(B\e[0;7m^K\e(B\e[m Cut Text    \e(B\e[0;7m^J\e(B\e[m Justify     \e(B\e[0;7m^C\e(B\e[m Cur Pos\r\e[31d\e(B\e[0;7m^X\e(B\e[m Exit\e[31;16H\e(B\e[0;7m^R\e(B\e[m Read File   \e(B\e[0;7m^\\\e(B\e[m Replace     \e(B\e[0;7m^U\e(B\e[m Uncut Text  \e(B\e[0;7m^T\e(B\e[m To Spell    \e(B\e[0;7m^_\e(B\e[m Go To Line\r\e[29d\e[?12l\e[?25h\e[3d"
+  - delay: 205
+    content: "\e[4d"
+  - delay: 514
+    content: "\e[5d"
+  - delay: 31
+    content: "\e[6d"
+  - delay: 30
+    content: "\e[7d"
+  - delay: 33
+    content: "\e[8d"
+  - delay: 38
+    content: "\e[9d"
+  - delay: 37
+    content: "\e[10d"
+  - delay: 39
+    content: "\e[11d"
+  - delay: 17
+    content: "\e[12d"
+  - delay: 30
+    content: "\e[13d"
+  - delay: 31
+    content: "\e[14d"
+  - delay: 33
+    content: "\e[15d"
+  - delay: 47
+    content: "\e[16d"
+  - delay: 24
+    content: "\e[17d"
+  - delay: 30
+    content: "\e[18d"
+  - delay: 34
+    content: "\e[19d"
+  - delay: 45
+    content: "\e[20d"
+  - delay: 38
+    content: "\e[21d"
+  - delay: 18
+    content: "\e[22d"
+  - delay: 31
+    content: "\e[23d"
+  - delay: 29
+    content: "\e[24d"
+  - delay: 34
+    content: "\e[25d"
+  - delay: 48
+    content: "\e[26d"
+  - delay: 24
+    content: "\e[27d"
+  - delay: 29
+    content: "\e[28d"
+  - delay: 42
+    content: "\e7\e[3;29r\e8\e[29d\e[14S\e[1;31r\e[15;11Hecho [mysqld] > /mnt/conf.d/server-id.cnf\e[K\e[16;11H# Add an offset to avoid reserved server-id=0 value.\e[17;11Hecho server-id=$((100 + $ordinal)) >> /mnt/conf.d/server-id.cnf\e[18;11H# Copy appropriate conf.d files from config-map to emptyDir.\e[19;11Hif [[ $ordinal -eq 0 ]]; then\e[20;13Hcp /mnt/config-map/master.cnf /mnt/conf.d/\e[21;11Helse\e[22d\b\bcp /mnt/config-map/slave.cnf /mnt/conf.d/\e[23;11Hfi\e[24;9HvolumeMounts:\e[25;9H- name: conf\e[26;11HmountPath: /mnt/conf.d\e[27;9H- name: config-map\e[28;11HmountPath: /mnt/config-map\r\e[15d"
+  - delay: 19
+    content: "\e[16d"
+  - delay: 44
+    content: "\e[17d"
+  - delay: 31
+    content: "\e[18d"
+  - delay: 29
+    content: "\e[19d"
+  - delay: 42
+    content: "\e[20d"
+  - delay: 18
+    content: "\e[21d"
+  - delay: 49
+    content: "\e[22d"
+  - delay: 32
+    content: "\e[23d"
+  - delay: 28
+    content: "\e[24d"
+  - delay: 27
+    content: "\e[25d"
+  - delay: 29
+    content: "\e[26d"
+  - delay: 47
+    content: "\e[27d"
+  - delay: 37
+    content: "\e[28d"
+  - delay: 22
+    content: "\e[3;10H\e[1K echo server-id=$((100 + $ordinal)) >> /mnt/conf.d/server-id.cnf\e[4;7H    # Copy appropriate conf.d files from config-map to emptyDir.\e[5;7H    if [[ $ordinal -eq 0 ]]; then\e[6;9H    cp /mnt/config-map/master.cnf /mnt/conf.d/\e[7;9H  else\e[K\e[8;9H    cp /mnt/config-map/slave.cnf /mnt/conf.d/\e[9;9H  fi\e[K\e[10;9HvolumeMounts:\e[11;9H- name: conf\e[12;11HmountPath: /mnt/conf.d\e[K\e[13;9H- name: config-map\e[K\e[14;11HmountPath: /mnt/config-map\e[15;7H- name: clone-mysql\e[K\e[16;9Himage: gcr.io/google-samples/xtrabackup:1.0\e[K\e[17;9Hcommand:\e[K\e[18;9H- bash\e[K\e[19;9H- \"-c\"\e[K\e[20;9H- |\e[K\e[21d\bset -ex\e[22;11H# Skip the clone if data already exists.\e[K\e[23;11H[[ -d /var/lib/mysql/mysql ]] && exit 0\e[24;9H  # Skip the clone on master (ordinal index 0).\e[25;9H  [[ `hostname` =~ -([0-9]+)$ ]] || exit 1\e[26;11Hordinal=${BASH_REMATCH[1]}\e[27;9H  [[ $ordinal -eq 0 ]] && exit 0\e[28;11H# Clone data from previous peer.\r\e[15d"
+  - delay: 30
+    content: "\e[16d"
+  - delay: 29
+    content: "\e[17d"
+  - delay: 45
+    content: "\e[18d"
+  - delay: 35
+    content: "\e[19d"
+  - delay: 29
+    content: "\e[20d"
+  - delay: 32
+    content: "\e[21d"
+  - delay: 21
+    content: "\e[22d"
+  - delay: 52
+    content: "\e[23d"
+  - delay: 28
+    content: "\e[24d"
+  - delay: 40
+    content: "\e[25d"
+  - delay: 31
+    content: "\e[26d"
+  - delay: 18
+    content: "\e[27d"
+  - delay: 44
+    content: "\e[28d"
+  - delay: 31
+    content: "\e[3;9Hcommand:\e[K\e[4;9H- bash\e[K\e[5;9H- \"-c\"\e[K\e[6;9H- |\e[K\e[7d\bset -ex\e[8;11H# Skip the clone if data already exists.\e[K\e[9;11H[[ -d /var/lib/mysql/mysql ]] && exit 0\e[10;9H  # Skip the clone on master (ordinal index 0).\e[11;9H  [[ `hostname` =~ -([0-9]+)$ ]] || exit 1\e[12;11Hordinal=${BASH_REMATCH[1]}\e[13;9H  [[ $ordinal -eq 0 ]] && exit 0\e[14;11H# Clone data from previous peer.\e[15;7H    ncat --recv-only mysql-$(($ordinal-1)).mysql 3307 | xbstream -x -C /var/lib/mysql\e[16;9H  # Prepare the backup.\e[K\e[17;9H  xtrabackup --prepare --target-dir=/var/lib/mysql\e[18;9HvolumeMounts:\e[19;11Hname: maya-database\e[20;9H  mountPath: /var/lib/mysql\e[21;12HubPath: mysql\e[22;9H- name: conf\e[K\e[23;11HmountPath: /etc/mysql/conf.d\e[K\e[24;7Hcontainers:\e[K\e[25;7H- name: mysql\e[K\e[26;9Himage: mysql:5.7\e[K\e[27;9Henv:\e[K\e[28;9H- name: MYSQL_ALLOW_EMPTY_PASSWORD\r\e[15d"
+  - delay: 30
+    content: "\e[16d"
+  - delay: 33
+    content: "\e[17d"
+  - delay: 42
+    content: "\e[18d"
+  - delay: 41
+    content: "\e[19d"
+  - delay: 18
+    content: "\e[20d"
+  - delay: 30
+    content: "\e[21d"
+  - delay: 34
+    content: "\e[22d"
+  - delay: 26
+    content: "\e[23d"
+  - delay: 45
+    content: "\e[24d"
+  - delay: 30
+    content: "\e[25d"
+  - delay: 30
+    content: "\e[26d"
+  - delay: 39
+    content: "\e[27d"
+  - delay: 24
+    content: "\e[28d"
+  - delay: 42
+    content: "\e7\e[3;29r\e8\e[29d\e[14S\e[1;31r\e[15;11Hvalue: \"1\"\e[16;9H- name: MYSQL_DATABASE\e[17;11Hvalue: \"maya\"\e[18;9H- name: MYSQL_USER\e[19;11Hvalue: \"maya\"\e[20;9H- name: MYSQL_PASSWORD\e[21;11Hvalue: \"maya\"\e[22;9Hports:\e[23;9H- name: mysql\e[24;11HcontainerPort: 3306\e[25;9HvolumeMounts:\e[26;9H- name: maya-database\e[27;11HmountPath: /var/lib/mysql\e[28;11HsubPath: mysql\r\e[15d"
+  - delay: 35
+    content: "\e[16d"
+  - delay: 26
+    content: "\e[17d"
+  - delay: 30
+    content: "\e[18d"
+  - delay: 38
+    content: "\e[19d"
+  - delay: 47
+    content: "\e[20d"
+  - delay: 20
+    content: "\e[21d"
+  - delay: 29
+    content: "\e[22d"
+  - delay: 34
+    content: "\e[23d"
+  - delay: 38
+    content: "\e[24d"
+  - delay: 41
+    content: "\e[25d"
+  - delay: 27
+    content: "\e[26d"
+  - delay: 29
+    content: "\e[27d"
+  - delay: 38
+    content: "\e[28d"
+  - delay: 18
+    content: "\e[3;11Hvalue: \"maya\"\e[K\e[4;9H- name: MYSQL_USER\e[5;9H  value: \"maya\"\e[K\e[6;9H- name: MYSQL_PASSWORD\e[K\e[7;11Hvalue: \"maya\"\e[K\e[8;9Hports:\e[K\e[9;9H- name: mysql\e[K\e[10;7H    containerPort: 3306\e[11;7H  volumeMounts:\e[12;9H- name: maya-database\e[13;9H  mountPath: /var/lib/mysql\e[14;9H  subPath: mysql\e[K\e[15;9H- name: conf\e[16;9H  mountPath: /etc/mysql/conf.d\e[17;9Hresources:\e[K\e[18;9H  requests:\e[K\e[19;11H  cpu: \"500m\e[20;9H    memory: \"1G\"\e[K\e[21;9HlivenessProbe:\e[K\e[22;9H  exec:\e[23;9H    command: [\"mysqladmin\", \"ping\"]\e[24;11HinitialDelaySeconds: 30\e[25;9H  periodSeconds: 10\e[26;9H  timeoutSeconds: 5\e[K\e[27;9HreadinessProbe:\e[K\e[28;11Hexec:\e[K\r\e[15d"
+  - delay: 45
+    content: "\e[16d"
+  - delay: 30
+    content: "\e[17d"
+  - delay: 46
+    content: "\e[18d"
+  - delay: 14
+    content: "\e[19d"
+  - delay: 31
+    content: "\e[20d"
+  - delay: 44
+    content: "\e[21d"
+  - delay: 30
+    content: "\e[22d"
+  - delay: 35
+    content: "\e[23d"
+  - delay: 30
+    content: "\e[24d"
+  - delay: 35
+    content: "\e[25d"
+  - delay: 44
+    content: "\e[26d"
+  - delay: 23
+    content: "\e[27d"
+  - delay: 28
+    content: "\e[28d"
+  - delay: 34
+    content: "\e[3;9Hresources:\e[K\e[4;9H  requests:\e[K\e[5;11H  cpu: \"500m\e[6;9H    memory: \"1G\"\e[K\e[7;9HlivenessProbe:\e[K\e[8;9H  exec:\e[9;9H    command: [\"mysqladmin\", \"ping\"]\e[10;11HinitialDelaySeconds: 30\e[11;9H  periodSeconds: 10\e[12;9H  timeoutSeconds: 5\e[K\e[13;9HreadinessProbe:\e[K\e[14;11Hexec:\e[K\e[15;9H    # Check we can execute queries over TCP (skip-networking is off).\e[16;11H  command: [\"mysql\", \"-h\", \"127.0.0.1\", \"-e\", \"SELECT 1\"]\e[17;9H  initialDelaySeconds: 5\e[18;11HperiodSeconds: 2\e[19;11HtimeoutSeconds: 1\e[20;7H- name: xtrabackup\e[21;9Himage: gcr.io/google-samples/xtrabackup:1.0\e[22;9Hports:\e[K\e[23;9H- name: xtrabackup\e[K\e[24;11HcontainerPort: 3307\e[K\e[25;9Hcommand:\e[K\e[26;9H- bash\e[K\e[27;9H- \"-c\"\e[K\e[28;9H- |\e[K\r\e[15d"
+  - delay: 38
+    content: "\e[16d"
+  - delay: 41
+    content: "\e[17d"
+  - delay: 29
+    content: "\e[18d"
+  - delay: 28
+    content: "\e[19d"
+  - delay: 31
+    content: "\e[20d"
+  - delay: 32
+    content: "\e[21d"
+  - delay: 38
+    content: "\e[22d"
+  - delay: 29
+    content: "\e[23d"
+  - delay: 31
+    content: "\e[24d"
+  - delay: 35
+    content: "\e[25d"
+  - delay: 24
+    content: "\e[26d"
+  - delay: 50
+    content: "\e[27d"
+  - delay: 31
+    content: "\e[28d"
+  - delay: 36
+    content: "\e7\e[3;29r\e8\e[29d\e[14S\e[1;31r\e[15;11Hset -ex\e[16;11Hcd /var/lib/mysql\e[18;11H# Determine binlog position of cloned data, if any.\e[19;11Hif [[ -f xtrabackup_slave_info ]]; then\e[20;13H# XtraBackup already generated a partial \"CHANGE MASTER TO\" query\e[21;13H# because we're cloning from an existing slave.\e[22;13Hmv xtrabackup_slave_info change_master_to.sql.in\e[23;13H# Ignore xtrabackup_binlog_info in this case (it's useless).\e[24;13Hrm -f xtrabackup_binlog_info\e[25;11Helif [[ -f xtrabackup_binlog_info ]]; then\e[26;13H# We're cloning directly from master. Parse binlog position.\e[27;13H[[ `cat xtrabackup_binlog_info` =~ ^(.*?)[[:space:]]+(.*?)$ ]] || exit 1\e[28;13Hrm xtrabackup_binlog_info\r\e[15d"
+  - delay: 18
+    content: "\e[16d"
+  - delay: 30
+    content: "\e[17d"
+  - delay: 45
+    content: "\e[18d"
+  - delay: 30
+    content: "\e[19d"
+  - delay: 34
+    content: "\e[20d"
+  - delay: 27
+    content: "\e[21d"
+  - delay: 29
+    content: "\e[22d"
+  - delay: 46
+    content: "\e[23d"
+  - delay: 39
+    content: "\e[24d"
+  - delay: 29
+    content: "\e[25d"
+  - delay: 21
+    content: "\e[26d"
+  - delay: 30
+    content: "\e[27d"
+  - delay: 45
+    content: "\e[28d"
+  - delay: 39
+    content: "\e7\e[3;29r\e8\e[29d\e[14S\e[1;31r\e[15;13Hecho \"CHANGE MASTER TO MASTER_LOG_FILE='${BASH_REMATCH[1]}',\\\e[16;19HMASTER_LOG_POS=${BASH_REMATCH[2]}\" > change_master_to.sql.in\e[17;11Hfi\e[19d\b\b# Check if we need to complete a clone by starting replication.\e[20;11Hif [[ -f change_master_to.sql.in ]]; then\e[21;13Hecho \"Waiting for mysqld to be ready (accepting connections)\"\e[22;13Huntil mysql -h 127.0.0.1 -e \"SELECT 1\"; do sleep 1; done\e[24;13Hecho \"Initializing replication from clone position\"\e[25;13H# In case of container restart, attempt this at-most-once.\e[26;13Hmv change_master_to.sql.in change_master_to.sql.orig\e[27;13Hmysql -h 127.0.0.1 <<EOF\e[28;11H$(<change_master_to.sql.orig),\r\e[15d"
+  - delay: 27
+    content: "\e[16d"
+  - delay: 28
+    content: "\e[17d"
+  - delay: 28
+    content: "\e[18d"
+  - delay: 43
+    content: "\e[19d"
+  - delay: 30
+    content: "\e[20d"
+  - delay: 33
+    content: "\e[21d"
+  - delay: 31
+    content: "\e[22d"
+  - delay: 29
+    content: "\e[23d"
+  - delay: 42
+    content: "\e[24d"
+  - delay: 30
+    content: "\e[25d"
+  - delay: 34
+    content: "\e[26d"
+  - delay: 29
+    content: "\e[27d"
+  - delay: 37
+    content: "\e[28d"
+  - delay: 40
+    content: "\e7\e[3;29r\e8\e[29d\e[14S\e[1;31r\e[15;13HMASTER_HOST='mysql-0.mysql',\e[16;13HMASTER_USER='root',\e[17;13HMASTER_PASSWORD='',\e[18;13HMASTER_CONNECT_RETRY=10;\e[19;11HSTART SLAVE;\e[20;11HEOF\e[21;11Hfi\e[23d\b\b# Start a server to send backups when requested by peers.\e[24;11Hexec ncat --listen --keep-open --send-only --max-conns=1 3307 -c \\\e[25;13H\"xtrabackup --backup --slave-info --stream=xbstream --host=127.0.0.1 --user=roo$\e[26;9HvolumeMounts:\e[27;9H- name: maya-database\e[28;11HmountPath: /var/lib/mysql\r\e[15d"
+  - delay: 26
+    content: "\e[16d"
+  - delay: 31
+    content: "\e[17d"
+  - delay: 44
+    content: "\e[18d"
+  - delay: 14
+    content: "\e[19d"
+  - delay: 48
+    content: "\e[20d"
+  - delay: 31
+    content: "\e[21d"
+  - delay: 29
+    content: "\e[22d"
+  - delay: 32
+    content: "\e[23d"
+  - delay: 34
+    content: "\e[24d"
+  - delay: 39
+    content: "\e[25d"
+  - delay: 27
+    content: "\e[26d"
+  - delay: 30
+    content: "\e[27d"
+  - delay: 35
+    content: "\e[28d"
+  - delay: 25
+    content: "\e7\e[3;29r\e8\e[29d\e[14S\e[1;31r\e[15;11HsubPath: mysql\e[16;9H- name: conf\e[17;11HmountPath: /etc/mysql/conf.d\e[18;9Hresources:\e[19;11Hrequests:\e[20;13Hcpu: \"100m\"\e[21;13Hmemory: \"100M\"\e[22;7Hvolumes:\e[23;7H- name: conf\e[24;9HemptyDir: {}\e[25;7H- name: config-map\e[26;9HconfigMap:\e[27;11Hname: mysql\e[28;3HvolumeClaimTemplates:\r\e[15d"
+  - delay: 45
+    content: "\e[16d"
+  - delay: 31
+    content: "\e[17d"
+  - delay: 36
+    content: "\e[18d"
+  - delay: 28
+    content: "\e[19d"
+  - delay: 34
+    content: "\e[20d"
+  - delay: 36
+    content: "\e[21d"
+  - delay: 43
+    content: "\e[22d"
+  - delay: 22
+    content: "\e[23d"
+  - delay: 25
+    content: "\e[24d"
+  - delay: 30
+    content: "\e[25d"
+  - delay: 46
+    content: "\e[26d"
+  - delay: 33
+    content: "\e[27d"
+  - delay: 38
+    content: "\e[28d"
+  - delay: 19
+    content: "\e7\e[3;29r\e8\e[29d\e[14S\e[1;31r\e[15;3H- metadata:\e[16;7Hname: maya-database\e[17;7Hannotations:\e[18;9Hvolume.beta.kubernetes.io/storage-class: openebs-jiva-default\e[19;5Hspec:\e[20;7HaccessModes: [\"ReadWriteOnce\"]\e[21;7Hresources:\e[22;9Hrequests:\e[23;11Hstorage: 5G\r\e[15d"
+  - delay: 29
+    content: "\e[16d"
+  - delay: 45
+    content: "\e[17d"
+  - delay: 30
+    content: "\e[18d"
+  - delay: 34
+    content: "\e[19d"
+  - delay: 31
+    content: "\e[20d"
+  - delay: 29
+    content: "\e[21d"
+  - delay: 46
+    content: "\e[22d"
+  - delay: 27
+    content: "\e[23d"
+  - delay: 28
+    content: "\e[24d"
+  - delay: 31
+    content: "\e[25d"
+  - delay: 210
+    content: "\e[A"
+  - delay: 168
+    content: "\e[A"
+  - delay: 160
+    content: "\e[A"
+  - delay: 177
+    content: "\e[A"
+  - delay: 160
+    content: "\e[A"
+  - delay: 184
+    content: "\e[A"
+  - delay: 204
+    content: "\e[18;70H"
+  - delay: 248
+    content: "\e[1;83H\e(B\e[0;7mModified\e[18;69H\e(B\e[m \b"
+  - delay: 209
+    content: "\b \b"
+  - delay: 30
+    content: "\b \b"
+  - delay: 30
+    content: "\b \b"
+  - delay: 30
+    content: "\b \b"
+  - delay: 45
+    content: "\b \b"
+  - delay: 34
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 29
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 181
+    content: "\b \b"
+  - delay: 240
+    content: "\b \b"
+  - delay: 245
+    content: c
+  - delay: 223
+    content: s
+  - delay: 241
+    content: t
+  - delay: 135
+    content: o
+  - delay: 56
+    content: r
+  - delay: 257
+    content: "\r\e[29d\e(B\e[0;7mSave modified buffer?  (Answering \"No\" will DISCARD changes.)                               \e[30;1H Y\e(B\e[m Yes\e[K\r\e[31d\e(B\e[0;7m N\e(B\e[m No  \e[31;16H \e(B\e[0;7m^C\e(B\e[m Cancel\e[K\e[29;63H"
+  - delay: 280
+    content: "\r\e[30d\e(B\e[0;7m^G\e(B\e[m Get Help\e[30;24H\e(B\e[0;7mM-D\e(B\e[m DOS Format\e[30;47H\e(B\e[0;7mM-A\e(B\e[m Append\e[30;70H\e(B\e[0;7mM-B\e(B\e[m Backup File\r\e[31d\e(B\e[0;7m^C\e(B\e[m Cancel\e[17G       \e(B\e[0;7mM-M\e(B\e[m Mac Format\e[31;47H\e(B\e[0;7mM-P\e(B\e[m Prepend\e[31;70H\e(B\e[0;7m^T\e(B\e[m To Files\r\e[29d\e(B\e[0;7mFile Name to Write: mysql-statefulset.yaml                   \r\e(B\e[m\e[29;43H"
+  - delay: 312
+    content: "\e[?25l\e[36G\e[1K \e(B\e[0;7m[ Wrote 176 lines ]\e(B\e[m\e[K\r\e[J\e[1;83H\e(B\e[0;7m        \e[31;92H\e(B\e[m\e[31;1H\e[?12l\e[?25h\e[?1049l\r\e[?1l\e>\e]0;admin@openebs: ~/openebs/k8s/demo/mysql-replication-cluster/statefulset\aadmin@openebs:~/openebs/k8s/demo/mysql-replication-cluster/statefulset$ "
+  - delay: 2000
+    content: c
+  - delay: 109
+    content: l
+  - delay: 136
+    content: e
+  - delay: 230
+    content: a
+  - delay: 60
+    content: r
+  - delay: 200
+    content: "\r\n\e[3J\e[H\e[2J\e]0;admin@openebs: ~/openebs/k8s/demo/mysql-replication-cluster/statefulset\aadmin@openebs:~/openebs/k8s/demo/mysql-replication-cluster/statefulset$ "
+  - delay: 120
+    content: "#"
+  - delay: 152
+    content: ' '
+  - delay: 131
+    content: 'Cr'
+  - delay: 94
+    content: 'ea'
+  - delay: 63
+    content: 'te'
+  - delay: 81
+    content: ' '
+  - delay: 120
+    content: 'Con'
+  - delay: 63
+    content: 'figMap'
+  - delay: 81
+    content: ', '
+  - delay: 120
+    content: 'Ser'
+  - delay: 152
+    content: 'v'
+  - delay: 131
+    content: 'ice,'
+  - delay: 94
+    content: ' a'
+  - delay: 94
+    content: 'nd'
+  - delay: 63
+    content: ' '
+  - delay: 120
+    content: 'St'
+  - delay: 120
+    content: 'ate'
+  - delay: 152
+    content: 'f'
+  - delay: 131
+    content: 'u'
+  - delay: 94
+    content: 'l'
+  - delay: 63
+    content: 'se'
+  - delay: 131
+    content: "t"
+  - delay: 100
+    content: "\r\n"
+  - delay: 223
+    content: "\e]0;admin@openebs: ~/openebs/k8s/demo/mysql-replication-cluster/statefulset\aadmin@openebs:~/openebs/k8s/demo/mysql-replication-cluster/statefulset$ "
+  - delay: 339
+    content: k
+  - delay: 207
+    content: u
+  - delay: 240
+    content: b
+  - delay: 195
+    content: e
+  - delay: 341
+    content: c
+  - delay: 202
+    content: 'tl '
+  - delay: 242
+    content: a
+  - delay: 281
+    content: p
+  - delay: 144
+    content: p
+  - delay: 185
+    content: l
+  - delay: 115
+    content: 'y'
+  - delay: 58
+    content: ' '
+  - delay: 208
+    content: '-'
+  - delay: 122
+    content: f
+  - delay: 287
+    content: ' '
+  - delay: 272
+    content: m
+  - delay: 231
+    content: 'y'
+  - delay: 168
+    content: "s \r"
+  - delay: 280
+    content: "\aql-"
+  - delay: 228
+    content: c
+  - delay: 212
+    content: 'onfigmap.yaml '
+  - delay: 296
+    content: "\r\n"
+  - delay: 210
+    content: "configmap/mysql created\r\n"
+  - delay: 5
+    content: "\e]0;admin@openebs: ~/openebs/k8s/demo/mysql-replication-cluster/statefulset\aadmin@openebs:~/openebs/k8s/demo/mysql-replication-cluster/statefulset$ "
+  - delay: 105
+    content: "kubectl apply -f mysq\rql-configmap.yaml "
+  - delay: 236
+    content: "\b\e[K"
+  - delay: 208
+    content: "\b\e[K"
+  - delay: 31
+    content: "\b\e[K"
+  - delay: 30
+    content: "\b\e[K"
+  - delay: 34
+    content: "\b\e[K"
+  - delay: 51
+    content: "\b\e[K"
+  - delay: 20
+    content: "\b\e[K"
+  - delay: 29
+    content: "\b\e[K"
+  - delay: 42
+    content: "\b\e[K"
+  - delay: 18
+    content: "\b\e[K"
+  - delay: 50
+    content: "\b\e[K"
+  - delay: 36
+    content: "\b\e[K"
+  - delay: 182
+    content: "\b\e[K"
+  - delay: 176
+    content: "\b\e[K"
+  - delay: 209
+    content: "\b\e[K"
+  - delay: 212
+    content: s
+  - delay: 176
+    content: v
+  - delay: 289
+    content: 'c.yaml '
+  - delay: 295
+    content: "\r\n"
+  - delay: 238
+    content: "service/mysql created\r\n"
+  - delay: 17
+    content: "service/mysql-read created\r\n"
+  - delay: 8
+    content: "\e]0;admin@openebs: ~/openebs/k8s/demo/mysql-replication-cluster/statefulset\aadmin@openebs:~/openebs/k8s/demo/mysql-replication-cluster/statefulset$ "
+  - delay: 205
+    content: "kubectl apply -f mysq\rql-svc.yaml "
+  - delay: 152
+    content: "\b\e[K"
+  - delay: 206
+    content: "\b\e[K"
+  - delay: 31
+    content: "\b\e[K"
+  - delay: 44
+    content: "\b\e[K"
+  - delay: 30
+    content: "\b\e[K"
+  - delay: 196
+    content: "\b\e[K"
+  - delay: 166
+    content: "\b\e[K"
+  - delay: 107
+    content: "\b\e[K"
+  - delay: 183
+    content: t
+  - delay: 296
+    content: 'atefulset.yaml '
+  - delay: 100
+    content: "\r\n"
+  - delay: 167
+    content: "statefulset.apps/mysql created\r\n"
+  - delay: 8
+    content: "\e]0;admin@openebs: ~/openebs/k8s/demo/mysql-replication-cluster/statefulset\aadmin@openebs:~/openebs/k8s/demo/mysql-replication-cluster/statefulset$ "
+  - delay: 110
+    content: "kubectl apply -f mysq\rql-statefulset.yaml "
+  - delay: 204
+    content: "\e[A\r\e]0;admin@openebs: ~/openebs/k8s/demo/mysql-replication-cluster/statefulset\aadmin@openebs:~/openebs/k8s/demo/mysql-replication-cluster/statefulset$ \e[K\r\n\r\e[K\e[A\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C"
+  - delay: 220
+    content: k
+  - delay: 227
+    content: u
+  - delay: 173
+    content: b
+  - delay: 72
+    content: e
+  - delay: 80
+    content: c
+  - delay: 199
+    content: t
+  - delay: 57
+    content: l
+  - delay: 80
+    content: ' '
+  - delay: 121
+    content: g
+  - delay: 118
+    content: e
+  - delay: 97
+    content: t
+  - delay: 24
+    content: ' '
+  - delay: 176
+    content: p
+  - delay: 152
+    content: o
+  - delay: 81
+    content: d
+  - delay: 55
+    content: s
+  - delay: 704
+    content: "\r\n"
+  - delay: 62
+    content: "NAME      READY   STATUS    RESTARTS   AGE\r\nmysql-0   2/2     Running   0          3m14s\r\nmysql-1   2/2     Running   0          2m19s\r\n\e]0;admin@openebs: ~/openebs/k8s/demo/mysql-replication-cluster/statefulset\aadmin@openebs:~/openebs/k8s/demo/mysql-replication-cluster/statefulset$ "
+  - delay: 60
+    content: "kubectl get pvc"
+  - delay: 97
+    content: "NAME                    STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS    AGE\r\nmaya-database-mysql-0   Bound    pvc-0f4e9013-f30d-4d06-abee-502d7a1c68d5   5G         RWO            openebs-cstor   3m52s\r\nmaya-database-mysql-1   Bound    pvc-f0a63fc6-226b-4991-b737-aef573e4a6a1   5G         RWO            openebs-cstor   2m57s\r\n\e]0;admin@openebs: ~/openebs/k8s/demo/mysql-replication-cluster/statefulset\aadmin@openebs:~/openebs/k8s/demo/mysql-replication-cluster/statefulset$ "
+  - delay: 11810
+    content: kubectl get pvc
+  - delay: 745
+    content: "\b\e[K"
+  - delay: 161
+    content: "\b\e[K"
+  - delay: 158
+    content: "\b\e[K"
+  - delay: 1426
+    content: s
+  - delay: 495
+    content: v
+  - delay: 184
+    content: c
+  - delay: 623
+    content: "\r\n"
+  - delay: 212
+    content: "NAME         TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)    AGE\r\nkubernetes   ClusterIP   100.64.0.1     <none>        443/TCP    13h\r\nmysql        ClusterIP   None           <none>        3306/TCP   4m16s\r\nmysql-read   ClusterIP   100.71.38.74   <none>        3306/TCP   4m16s\r\n\e]0;admin@openebs: ~/openebs/k8s/demo/mysql-replication-cluster/statefulset\aadmin@openebs:~/openebs/k8s/demo/mysql-replication-cluster/statefulset$ "
+  - delay: 120
+    content: "#"
+  - delay: 152
+    content: ' '
+  - delay: 131
+    content: 'My'
+  - delay: 94
+    content: 'SQL'
+  - delay: 63
+    content: ' '
+  - delay: 81
+    content: 'statefulset'
+  - delay: 120
+    content: ' '
+  - delay: 63
+    content: 'is '
+  - delay: 81
+    content: 'su'
+  - delay: 120
+    content: 'cc'
+  - delay: 152
+    content: 'es'
+  - delay: 131
+    content: 's'
+  - delay: 94
+    content: 'f'
+  - delay: 94
+    content: 'u'
+  - delay: 63
+    content: 'l'
+  - delay: 120
+    content: 'l'
+  - delay: 120
+    content: 'y '
+  - delay: 63
+    content: 'dep'
+  - delay: 81
+    content: 'lo'
+  - delay: 120
+    content: 'ye'
+  - delay: 152
+    content: 'd'
+  - delay: 131
+    content: ' '
+  - delay: 94
+    content: 'on'
+  - delay: 94
+    content: ' '
+  - delay: 63
+    content: 'an'
+  - delay: 120
+    content: ' '
+  - delay: 120
+    content: 'Ope'
+  - delay: 152
+    content: 'nEBS'
+  - delay: 131
+    content: ' '
+  - delay: 94
+    content: "pe"
+  - delay: 63
+    content: 'r'
+  - delay: 131
+    content: "si"
+  - delay: 94
+    content: "ste"
+  - delay: 63
+    content: 'nt'
+  - delay: 131
+    content: ' '
+  - delay: 94
+    content: 'vo'
+  - delay: 94
+    content: 'l'
+  - delay: 63
+    content: 'u'
+  - delay: 120
+    content: 'm'
+  - delay: 120
+    content: 'e'
+  - delay: 100
+    content: "\r\n"
+  - delay: 100
+    content: "\e]0;admin@openebs: ~\aadmin@openebs:~$ "
